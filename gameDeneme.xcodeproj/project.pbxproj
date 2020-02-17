@@ -37,6 +37,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A39595B23FA5F27006F31A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A6DB6E823EC205400EEC240 /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8A39595C23FA5F42006F31A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A6DB6EF23EC205500EEC240 /* LaunchScreen.storyboard */,
+				8A6DB6EA23EC205400EEC240 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A39595D23FA5F50006F31A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A39595E23FA5F6E006F31A0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8A6DB6E623EC205400EEC240 /* art.scnassets */,
+				8A6DB6ED23EC205500EEC240 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		8A6DB6D823EC205300EEC240 = {
 			isa = PBXGroup;
 			children = (
@@ -57,11 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				8A6DB6E423EC205400EEC240 /* AppDelegate.swift */,
-				8A6DB6E623EC205400EEC240 /* art.scnassets */,
-				8A6DB6E823EC205400EEC240 /* GameViewController.swift */,
-				8A6DB6EA23EC205400EEC240 /* Main.storyboard */,
-				8A6DB6ED23EC205500EEC240 /* Assets.xcassets */,
-				8A6DB6EF23EC205500EEC240 /* LaunchScreen.storyboard */,
+				8A39595D23FA5F50006F31A0 /* Model */,
+				8A39595C23FA5F42006F31A0 /* View */,
+				8A39595E23FA5F6E006F31A0 /* Assets */,
+				8A39595B23FA5F27006F31A0 /* Controller */,
 				8A6DB6F223EC205500EEC240 /* Info.plist */,
 			);
 			path = gameDeneme;

@@ -3,27 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A3D16982413A76B00A46FD9 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D16972413A76B00A46FD9 /* ExerciseModel.swift */; };
 		8A6DB6E523EC205400EEC240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DB6E423EC205400EEC240 /* AppDelegate.swift */; };
 		8A6DB6E723EC205400EEC240 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6DB6E623EC205400EEC240 /* art.scnassets */; };
 		8A6DB6E923EC205400EEC240 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DB6E823EC205400EEC240 /* GameViewController.swift */; };
 		8A6DB6EC23EC205400EEC240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6DB6EA23EC205400EEC240 /* Main.storyboard */; };
-		8A6DB6EE23EC205500EEC240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6DB6ED23EC205500EEC240 /* Assets.xcassets */; };
 		8A6DB6F123EC205500EEC240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6DB6EF23EC205500EEC240 /* LaunchScreen.storyboard */; };
+		8A86F46124424D470087E255 /* EquipmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A86F46024424D470087E255 /* EquipmentTableViewController.swift */; };
+		8A8D089D241258BF00AAECF0 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D089C241258BF00AAECF0 /* ExerciseDetailViewController.swift */; };
+		8AB2FADB24125AA800450510 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB2FADA24125AA800450510 /* Images.xcassets */; };
+		8AEE85F5243C922B00F90A25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AEE85F4243C922B00F90A25 /* GoogleService-Info.plist */; };
+		8AF31B9A23FC382200366AA3 /* ExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF31B9923FC382200366AA3 /* ExercisesTableViewController.swift */; };
+		8AF31B9D23FDC21C00366AA3 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF31B9B23FDC21C00366AA3 /* ExerciseCell.swift */; };
+		8AF31B9E23FDC21C00366AA3 /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AF31B9C23FDC21C00366AA3 /* ExerciseCell.xib */; };
+		8AF5AF8323FE698900A326DB /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5AF8223FE698900A326DB /* UIExtension.swift */; };
+		AE066065EA6A33FDA17CB2A6 /* Pods_gameDeneme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7432EF968857045DD0006102 /* Pods_gameDeneme.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A6DB6E123EC205400EEC240 /* gameDeneme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gameDeneme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2230B1DD3257CF9718285295 /* Pods-gameDeneme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gameDeneme.release.xcconfig"; path = "Target Support Files/Pods-gameDeneme/Pods-gameDeneme.release.xcconfig"; sourceTree = "<group>"; };
+		7432EF968857045DD0006102 /* Pods_gameDeneme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gameDeneme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82A25AAB4564FD5D88149C73 /* Pods-gameDeneme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gameDeneme.debug.xcconfig"; path = "Target Support Files/Pods-gameDeneme/Pods-gameDeneme.debug.xcconfig"; sourceTree = "<group>"; };
+		8A3D16972413A76B00A46FD9 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
+		8A6DB6E123EC205400EEC240 /* ProperExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProperExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6DB6E423EC205400EEC240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A6DB6E623EC205400EEC240 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		8A6DB6E823EC205400EEC240 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		8A6DB6EB23EC205400EEC240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8A6DB6ED23EC205500EEC240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A6DB6F023EC205500EEC240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A6DB6F223EC205500EEC240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A86F46024424D470087E255 /* EquipmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentTableViewController.swift; sourceTree = "<group>"; };
+		8A8D089C241258BF00AAECF0 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
+		8AB2FADA24125AA800450510 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8AEE85F4243C922B00F90A25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8AF31B9923FC382200366AA3 /* ExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTableViewController.swift; sourceTree = "<group>"; };
+		8AF31B9B23FDC21C00366AA3 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
+		8AF31B9C23FDC21C00366AA3 /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
+		8AF5AF8223FE698900A326DB /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,16 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE066065EA6A33FDA17CB2A6 /* Pods_gameDeneme.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		426C83CF4B4670109AF115D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7432EF968857045DD0006102 /* Pods_gameDeneme.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A39595B23FA5F27006F31A0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				8A6DB6E823EC205400EEC240 /* GameViewController.swift */,
+				8A86F46024424D470087E255 /* EquipmentTableViewController.swift */,
+				8AF31B9923FC382200366AA3 /* ExercisesTableViewController.swift */,
+				8A8D089C241258BF00AAECF0 /* ExerciseDetailViewController.swift */,
+				8AF31B9F23FDC22300366AA3 /* ExerciseCell */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -57,6 +90,7 @@
 		8A39595D23FA5F50006F31A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8A3D16972413A76B00A46FD9 /* ExerciseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -64,8 +98,8 @@
 		8A39595E23FA5F6E006F31A0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				8AB2FADA24125AA800450510 /* Images.xcassets */,
 				8A6DB6E623EC205400EEC240 /* art.scnassets */,
-				8A6DB6ED23EC205500EEC240 /* Assets.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -75,13 +109,15 @@
 			children = (
 				8A6DB6E323EC205400EEC240 /* gameDeneme */,
 				8A6DB6E223EC205400EEC240 /* Products */,
+				9C80DE516436EB4BA5955ED9 /* Pods */,
+				426C83CF4B4670109AF115D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		8A6DB6E223EC205400EEC240 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A6DB6E123EC205400EEC240 /* gameDeneme.app */,
+				8A6DB6E123EC205400EEC240 /* ProperExercise.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,13 +126,41 @@
 			isa = PBXGroup;
 			children = (
 				8A6DB6E423EC205400EEC240 /* AppDelegate.swift */,
+				8AF5AF8423FE698E00A326DB /* Publics */,
 				8A39595D23FA5F50006F31A0 /* Model */,
 				8A39595C23FA5F42006F31A0 /* View */,
-				8A39595E23FA5F6E006F31A0 /* Assets */,
 				8A39595B23FA5F27006F31A0 /* Controller */,
+				8A39595E23FA5F6E006F31A0 /* Assets */,
 				8A6DB6F223EC205500EEC240 /* Info.plist */,
+				8AEE85F4243C922B00F90A25 /* GoogleService-Info.plist */,
 			);
 			path = gameDeneme;
+			sourceTree = "<group>";
+		};
+		8AF31B9F23FDC22300366AA3 /* ExerciseCell */ = {
+			isa = PBXGroup;
+			children = (
+				8AF31B9B23FDC21C00366AA3 /* ExerciseCell.swift */,
+				8AF31B9C23FDC21C00366AA3 /* ExerciseCell.xib */,
+			);
+			path = ExerciseCell;
+			sourceTree = "<group>";
+		};
+		8AF5AF8423FE698E00A326DB /* Publics */ = {
+			isa = PBXGroup;
+			children = (
+				8AF5AF8223FE698900A326DB /* UIExtension.swift */,
+			);
+			path = Publics;
+			sourceTree = "<group>";
+		};
+		9C80DE516436EB4BA5955ED9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82A25AAB4564FD5D88149C73 /* Pods-gameDeneme.debug.xcconfig */,
+				2230B1DD3257CF9718285295 /* Pods-gameDeneme.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A6DB6F523EC205500EEC240 /* Build configuration list for PBXNativeTarget "gameDeneme" */;
 			buildPhases = (
+				A6172F1ABBA341D2F4604FBF /* [CP] Check Pods Manifest.lock */,
 				8A6DB6DD23EC205300EEC240 /* Sources */,
 				8A6DB6DE23EC205300EEC240 /* Frameworks */,
 				8A6DB6DF23EC205300EEC240 /* Resources */,
+				5168B0BCA76C95021242FD02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -116,7 +182,7 @@
 			);
 			name = gameDeneme;
 			productName = gameDeneme;
-			productReference = 8A6DB6E123EC205400EEC240 /* gameDeneme.app */;
+			productReference = 8A6DB6E123EC205400EEC240 /* ProperExercise.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -158,13 +224,57 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A6DB6E723EC205400EEC240 /* art.scnassets in Resources */,
+				8AB2FADB24125AA800450510 /* Images.xcassets in Resources */,
 				8A6DB6F123EC205500EEC240 /* LaunchScreen.storyboard in Resources */,
-				8A6DB6EE23EC205500EEC240 /* Assets.xcassets in Resources */,
+				8AF31B9E23FDC21C00366AA3 /* ExerciseCell.xib in Resources */,
 				8A6DB6EC23EC205400EEC240 /* Main.storyboard in Resources */,
+				8AEE85F5243C922B00F90A25 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5168B0BCA76C95021242FD02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gameDeneme/Pods-gameDeneme-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gameDeneme/Pods-gameDeneme-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gameDeneme/Pods-gameDeneme-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6172F1ABBA341D2F4604FBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gameDeneme-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A6DB6DD23EC205300EEC240 /* Sources */ = {
@@ -172,7 +282,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A6DB6E923EC205400EEC240 /* GameViewController.swift in Sources */,
+				8AF31B9D23FDC21C00366AA3 /* ExerciseCell.swift in Sources */,
 				8A6DB6E523EC205400EEC240 /* AppDelegate.swift in Sources */,
+				8AF5AF8323FE698900A326DB /* UIExtension.swift in Sources */,
+				8A86F46124424D470087E255 /* EquipmentTableViewController.swift in Sources */,
+				8A3D16982413A76B00A46FD9 /* ExerciseModel.swift in Sources */,
+				8AF31B9A23FC382200366AA3 /* ExercisesTableViewController.swift in Sources */,
+				8A8D089D241258BF00AAECF0 /* ExerciseDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,17 +430,19 @@
 		};
 		8A6DB6F623EC205500EEC240 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A25AAB4564FD5D88149C73 /* Pods-gameDeneme.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JZ8X5DE42Y;
 				INFOPLIST_FILE = gameDeneme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.muhammetTahaGenc.gameDeneme;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.muhammetTahaGenc.ProperExercise;
+				PRODUCT_NAME = ProperExercise;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,17 +450,19 @@
 		};
 		8A6DB6F723EC205500EEC240 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2230B1DD3257CF9718285295 /* Pods-gameDeneme.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JZ8X5DE42Y;
 				INFOPLIST_FILE = gameDeneme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.muhammetTahaGenc.gameDeneme;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.muhammetTahaGenc.ProperExercise;
+				PRODUCT_NAME = ProperExercise;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

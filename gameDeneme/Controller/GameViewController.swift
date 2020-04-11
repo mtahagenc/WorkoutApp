@@ -7,62 +7,18 @@
 //
 
 import UIKit
-import QuartzCore
 import SceneKit
+import Firebase
 
-class GameViewController: UIViewController {
-
+class GameViewController: UIViewController{
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // create a new scene
-        let scene = SCNScene(named: "art.scnassets/max.scn")!
-        
-        // create and add a camera to the scene
-        let cameraNode = SCNNode()
-        cameraNode.camera = SCNCamera()
-        scene.rootNode.addChildNode(cameraNode)
-        
-        // place the camera
-        cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
-        
-        // create and add a light to the scene
-        let lightNode = SCNNode()
-        lightNode.light = SCNLight()
-        lightNode.light!.type = .omni
-        lightNode.position = SCNVector3(x: 0, y: 10, z: 10)
-        scene.rootNode.addChildNode(lightNode)
-        
-        // create and add an ambient light to the scene
-        let ambientLightNode = SCNNode()
-        ambientLightNode.light = SCNLight()
-        ambientLightNode.light!.type = .ambient
-        ambientLightNode.light!.color = UIColor.darkGray
-        scene.rootNode.addChildNode(ambientLightNode)
-        
-        // retrieve the SCNView
-        let scnView = self.view as! SCNView
-        
-        // set the scene to the view
-        scnView.scene = scene
-        
-        // allows the user to manipulate the camera
-        scnView.allowsCameraControl = true
-        
-        // show statistics such as fps and timing information
-        scnView.showsStatistics = false
-        
-        // configure the view
-        scnView.backgroundColor = UIColor.black
-        
-        // add a tap gesture recognizer
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-        scnView.addGestureRecognizer(tapGesture)
-        
+        createSCNView(scene: createNewScene())
     }
     
-    @objc
-    func handleTap(_ gestureRecognize: UIGestureRecognizer) {
+    @objc func handleTap(_ gestureRecognize: UIGestureRecognizer) {
+        
         // retrieve the SCNView
         let scnView = self.view as! SCNView
         
@@ -73,11 +29,9 @@ class GameViewController: UIViewController {
         if hitResults.count > 0 {
             // retrieved the first clicked object
             let result = hitResults[0]
-            print(result.node.geometry!.name!)
             let name = result.node.geometry!.name
+            
             print(chose(name: name!))
-            
-            
             // get its material
             let material = result.node.geometry!.firstMaterial!
             
@@ -119,7 +73,7 @@ class GameViewController: UIViewController {
     }
     
     func chose (name:String) -> Int{
-        
+                
         if name == "Max.001" {
             return 1
         } else if name == "Max.002" {
@@ -139,6 +93,7 @@ class GameViewController: UIViewController {
         } else if name == "Max.009" {
             return 9
         } else if name == "Max.010" {
+            performSegue(withIdentifier: "showEquipment", sender: self)
             return 10
         } else if name == "Max.011" {
             return 11
@@ -150,8 +105,64 @@ class GameViewController: UIViewController {
             return 14
         } else if name == "Max.015" {
             return 15
+        } else {
+            return 0
         }
-        return 0
+    }
+    
+    
+    func createNewScene() -> SCNScene {
+        // create a new scene
+        let scene = SCNScene(named: "art.scnassets/max.scn")!
+        
+        // add an image to the background of the scene
+        scene.background.contents = UIImage(named: "3")
+        
+        // create and add a camera to the scene
+        let cameraNode = SCNNode()
+        cameraNode.camera = SCNCamera()
+        scene.rootNode.addChildNode(cameraNode)
+            
+        // place the camera
+        cameraNode.position = SCNVector3(x: 0, y: 0, z: 25)
+
+        // create and add a light to the scene
+        let firstLightNode = SCNNode()
+        firstLightNode.light = SCNLight()
+        firstLightNode.light!.type = .omni
+        firstLightNode.position = SCNVector3(x: 0, y: 7, z: 10)
+        scene.rootNode.addChildNode(firstLightNode)
+
+        
+        // create and add an ambient light to the scene
+        let secondLightNode = SCNNode()
+        secondLightNode.light = SCNLight()
+        secondLightNode.light!.type = .omni
+        secondLightNode.position = SCNVector3(x: 0, y: 10, z: -10)
+        scene.rootNode.addChildNode(secondLightNode)
+        
+        return scene
+    }
+    
+    func createSCNView(scene: SCNScene) {
+        // retrieve the SCNView
+        let scnView = self.view as! SCNView
+        
+        // set the scene to the view
+        scnView.scene = scene
+        
+        // allows the user to manipulate the camera
+        scnView.allowsCameraControl = true
+        
+        // show statistics such as fps and timing information
+        scnView.showsStatistics = false
+        
+        // configure the view
+//        scnView.backgroundColor = UIColor.black
+        
+        // add a tap gesture recognizer
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        scnView.addGestureRecognizer(tapGesture)
     }
     
 

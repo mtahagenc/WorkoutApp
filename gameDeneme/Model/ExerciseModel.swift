@@ -29,5 +29,30 @@ extension Hebele {
 
     self.init(name:name, surname:surname)
   }
+}
 
+struct Exercise {
+    var name: String
+    var videoID: String
+    var explanation: String
+    //    var steps: [String]
+    var dictionary: [String: Any] {
+      return [
+        "name": name,
+        "videoID": videoID,
+        "explanation": explanation,
+        //        "steps": steps,
+      ]
+    }
+}
+
+extension Exercise {
+
+  init?(dictionary: [String : Any]) {
+    guard let name = dictionary["name"] as? String,
+        let videoID = dictionary["videoID"] as? String,
+        let explanation = dictionary["explanation"] as? String else { return nil }
+
+    self.init(name: name, videoID: videoID, explanation: explanation)
+  }
 }

@@ -10,11 +10,27 @@ import UIKit
 import SceneKit
 import Firebase
 
-class GameViewController: UIViewController{
+class GameViewController: UIViewController,BodyPartProtocol{
+    
+    var nameToSend: String? {
+        didSet{
+            performSegue(withIdentifier: "showEquipment", sender: self)
+        }
+    }
+    func getBodyPart() -> String {
+        //Protocol function
+        return nameToSend!
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         createSCNView(scene: createNewScene())
+    }
+        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let segu:EquipmentTableViewController = segue.destination as? EquipmentTableViewController {
+            segu.delegate = self
+        }
     }
     
     @objc func handleTap(_ gestureRecognize: UIGestureRecognizer) {
@@ -30,8 +46,9 @@ class GameViewController: UIViewController{
             // retrieved the first clicked object
             let result = hitResults[0]
             let name = result.node.geometry!.name
+            nameToSend = name
             
-            print(chose(name: name!))
+            
             // get its material
             let material = result.node.geometry!.firstMaterial!
             
@@ -74,7 +91,7 @@ class GameViewController: UIViewController{
     
     func chose (name:String) -> Int{
                 
-        if name == "Max.001" {
+        if name == "Forearms" {
             return 1
         } else if name == "Max.002" {
             return 2
@@ -93,7 +110,6 @@ class GameViewController: UIViewController{
         } else if name == "Max.009" {
             return 9
         } else if name == "Max.010" {
-            performSegue(withIdentifier: "showEquipment", sender: self)
             return 10
         } else if name == "Max.011" {
             return 11
@@ -114,7 +130,6 @@ class GameViewController: UIViewController{
     func createNewScene() -> SCNScene {
         // create a new scene
         let scene = SCNScene(named: "art.scnassets/max.scn")!
-        
         // add an image to the background of the scene
         scene.background.contents = UIImage(named: "3")
         

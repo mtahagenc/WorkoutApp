@@ -10,28 +10,14 @@
         <!--Equipment Table View Controller-->
         <scene sceneID="D9u-M2-IlY">
             <objects>
-                <tableViewController modalPresentationStyle="fullScreen" id="gJJ-fc-OZD" customClass="EquipmentTableViewController" customModule="ProperExercise" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="gJJ-fc-OZD" customClass="EquipmentTableViewController" customModule="ProperExercise" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EAo-58-zN3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="MQc-Ug-agd">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <items>
-                                <navigationItem title="Equipment" id="xDz-Ub-rSK">
-                                    <barButtonItem key="leftBarButtonItem" title="Back" id="x7e-Se-Vfw">
-                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <connections>
-                                            <action selector="backBtnPressed:" destination="gJJ-fc-OZD" id="EoP-Fu-GHH"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </navigationItem>
-                            </items>
-                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="equipment" id="uF3-Vy-nCX">
-                                <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uF3-Vy-nCX" id="XwA-Pe-uGk">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -44,7 +30,6 @@
                             <outlet property="delegate" destination="gJJ-fc-OZD" id="WaD-QE-tjO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3FS-95-H9C"/>
                     <connections>
                         <segue destination="F1E-8A-IoA" kind="show" identifier="showExercises" id="pq6-5h-VKK"/>
                     </connections>
@@ -73,7 +58,7 @@
         <!--Exercises Table View Controller-->
         <scene sceneID="TDM-zn-1L3">
             <objects>
-                <tableViewController modalPresentationStyle="fullScreen" id="F1E-8A-IoA" customClass="ExercisesTableViewController" customModule="ProperExercise" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="F1E-8A-IoA" customClass="ExercisesTableViewController" customModule="ProperExercise" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="n8N-m8-rJx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,7 +68,6 @@
                             <outlet property="delegate" destination="F1E-8A-IoA" id="a8Q-Vu-aQf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Xbv-VX-iPO"/>
                     <connections>
                         <segue destination="NLT-W9-VTW" kind="show" identifier="showDetail" id="5se-3U-LpZ"/>
                     </connections>
@@ -95,7 +79,7 @@
         <!--Exercise Detail View Controller-->
         <scene sceneID="ghr-F3-2Nx">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="NLT-W9-VTW" customClass="ExerciseDetailViewController" customModule="ProperExercise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="NLT-W9-VTW" customClass="ExerciseDetailViewController" customModule="ProperExercise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kAp-RA-375">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,13 +90,7 @@
                                     <constraint firstAttribute="height" constant="44" id="FEt-dQ-3bX"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Title" id="g8j-zX-alI">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="ghU-4s-9G1">
-                                            <connections>
-                                                <action selector="backButton:" destination="NLT-W9-VTW" id="RLL-KY-odf"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Title" id="g8j-zX-alI"/>
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="frU-JX-OWh">

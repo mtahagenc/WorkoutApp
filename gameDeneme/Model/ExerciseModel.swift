@@ -9,39 +9,15 @@
 import Foundation
 import Firebase
 
-struct Hebele {
-
-  var name: String
-  var surname: String
-  var dictionary: [String: Any] {
-    return [
-      "name": name,
-      "surname": surname,
-    ]
-  }
-}
-
-extension Hebele {
-
-  init?(dictionary: [String : Any]) {
-    guard let name = dictionary["name"] as? String,
-        let surname = dictionary["surname"] as? String else { return nil }
-
-    self.init(name:name, surname:surname)
-  }
-}
-
 struct Exercise {
+    var explanation: [String]
+    var id: String
     var name: String
-    var videoID: String
-    var explanation: String
-    //    var steps: [String]
     var dictionary: [String: Any] {
       return [
-        "name": name,
-        "videoID": videoID,
         "explanation": explanation,
-        //        "steps": steps,
+        "id": id,
+        "name": name,
       ]
     }
 }
@@ -49,10 +25,11 @@ struct Exercise {
 extension Exercise {
 
   init?(dictionary: [String : Any]) {
-    guard let name = dictionary["name"] as? String,
-        let videoID = dictionary["videoID"] as? String,
-        let explanation = dictionary["explanation"] as? String else { return nil }
+    guard let explanation = dictionary["explanation"] as? [String],
+        let id = dictionary["id"] as? String,
+        let name = dictionary["name"] as? String
+        else { return nil }
 
-    self.init(name: name, videoID: videoID, explanation: explanation)
+    self.init(explanation: explanation, id: id, name: name)
   }
 }

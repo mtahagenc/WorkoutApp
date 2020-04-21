@@ -15,6 +15,7 @@ class ExerciseCell: UITableViewCell {
         thumbnailImage.layer.cornerRadius = 8
         exerciseName.layer.masksToBounds = true
         exerciseName.layer.cornerRadius = 8
+        exerciseName.backgroundColor = UIColor.white.withAlphaComponent(0.6)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -23,7 +24,8 @@ class ExerciseCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var backView: UIView!
+    
     @IBOutlet weak var exerciseName: UILabel!
     @IBOutlet weak var thumbnailImage: UIImageView!
 }

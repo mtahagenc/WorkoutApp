@@ -15,7 +15,18 @@ protocol EquipmentProtocol {
     func getEquipment() -> String
 }
 
-class ExercisesTableViewController: UITableViewController {
+class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
+    
+    var exerciseToSend: Exercise? {
+        didSet{
+            performSegue(withIdentifier: "showDetail", sender: self)
+        }
+    }
+    
+    func getExercise() -> Exercise {
+        return exerciseToSend!
+    }
+    
     
     //MARK: - Variables and Constants
     var delegate:EquipmentProtocol?
@@ -31,52 +42,51 @@ class ExercisesTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.reloadData()
         registerTableViewCells()
-        getData()
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        getData(exerciseName: self.delegate!.getEquipment())
         addSwipe()
-        print(delegate!.getEquipment())
     }
     
     
     //MARK: - TableView Functions
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return exercisesArray.count
+        return exercises.count
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return self.view.frame.size.width / 1.77
+        return self.view.frame.size.width / 2.77
     }
         
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseCell", for: indexPath) as! ExerciseCell
-        let urlString = "\(baseImageURL)\(exercisesArray[indexPath.row])\(jpgString)"
+        cell.exerciseName.text = exercises[indexPath.row].name
+        let urlString = "\(baseImageURL)\(exercises[indexPath.row].id)\(jpgString)"
         cell.thumbnailImage.setImageWithKF(urlString)
         cell.thumbnailImage.contentMode = .scaleAspectFill
-        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showDetail", sender: self)
+        exerciseToSend = exercises[indexPath.row]
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let des = segue.destination as! ExerciseDetailViewController
+        des.delegate = self
+    }
+    
     func registerTableViewCells () {
         //We are registering the cell we created to the tableview
         let anyTableViewCell = UINib(nibName: "ExerciseCell", bundle: nil)
         self.tableView.register(anyTableViewCell, forCellReuseIdentifier: "ExerciseCell")
      }
 
-    
-    
     //MARK: - Functions
     
-    func saveData () {
-        let citiesRef = db.collection("Exercises")
-        citiesRef.document("Dumbell").setData(["exercises":"asdasda"])
-    }
-    
-    func getData() {
-        db.collection("Exercises").getDocuments() { (snapshot, error) in
+    func getData(exerciseName: String) {
+        db.collection(exerciseName).getDocuments() { (snapshot, error) in
             
             guard let snapshot = snapshot else {
               print("Error fetching snapshot results: \(error!)")
@@ -91,10 +101,12 @@ class ExercisesTableViewController: UITableViewController {
                 fatalError("Unable to initialize type \(Exercise.self) with dictionary \(document.data())")
                 }
             }
-            self.exercises = models
-            print(self.exercises[0].name)
-            print(self.exercises[1].name)
+            
             self.documents = snapshot.documents
+            DispatchQueue.main.async {
+                self.exercises = models
+                self.tableView.reloadData()
+            }
         }
     }
     
@@ -106,6 +118,12 @@ class ExercisesTableViewController: UITableViewController {
             gesture.direction = direction
             self.view.addGestureRecognizer(gesture)
         }
+    }
+    
+    func thumWidth () -> CGFloat {
+        let thumbWidth = view.frame.width * 1.77
+        
+        return thumbWidth
     }
 
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {

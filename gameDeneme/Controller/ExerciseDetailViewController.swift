@@ -9,23 +9,41 @@
 import UIKit
 import YoutubePlayer_in_WKWebView
 
-class ExerciseDetailViewController: UIViewController {
+protocol ExerciseProtocol {
+    func getExercise() -> Exercise
+}
+
+class ExerciseDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var delegate:ExerciseProtocol?
     
     @IBOutlet weak var exerciseName: UINavigationItem!
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var infoTextView: UITextView!
-    
     @IBOutlet weak var videoView: WKYTPlayerView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        videoView.load(withVideoId: "3ml7BH7mNwQ")
+        videoView.load(withVideoId: delegate!.getExercise().id)
+        exerciseName.title = delegate!.getExercise().name
         addSwipe()
+        setupTableView()
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return delegate!.getExercise().explanation.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseDetail", for: indexPath) as! ExplanationTableViewCell
+        
+        cell.explanationLabel.text = delegate!.getExercise().explanation[indexPath.row]
+        
+        return cell
+    }
+        
     func addSwipe() {
         //We are creating a swipe gesture to control our view without buttons
         let directions: [UISwipeGestureRecognizer.Direction] = [.right, .left, .up, .down]
@@ -34,6 +52,15 @@ class ExerciseDetailViewController: UIViewController {
             gesture.direction = direction
             self.view.addGestureRecognizer(gesture)
         }
+    }
+    
+    func setupTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 600
+        tableView.separatorStyle = .none
+        tableView.separatorColor = .white
     }
 
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {

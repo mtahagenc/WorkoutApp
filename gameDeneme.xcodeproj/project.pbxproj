@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0E58112447B7E500610CAF /* EquipmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E580F2447B7E500610CAF /* EquipmentCell.swift */; };
+		8A0E58122447B7E500610CAF /* EquipmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0E58102447B7E500610CAF /* EquipmentCell.xib */; };
+		8A0E581524488AFE00610CAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A0E581424488AFE00610CAF /* GoogleService-Info.plist */; };
 		8A3D16982413A76B00A46FD9 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D16972413A76B00A46FD9 /* ExerciseModel.swift */; };
+		8A505943244B74A9005B9B63 /* ExplanationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A505942244B74A9005B9B63 /* ExplanationTableViewCell.swift */; };
 		8A6DB6E523EC205400EEC240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DB6E423EC205400EEC240 /* AppDelegate.swift */; };
 		8A6DB6E723EC205400EEC240 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6DB6E623EC205400EEC240 /* art.scnassets */; };
 		8A6DB6E923EC205400EEC240 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DB6E823EC205400EEC240 /* GameViewController.swift */; };
@@ -16,7 +20,8 @@
 		8A86F46124424D470087E255 /* EquipmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A86F46024424D470087E255 /* EquipmentTableViewController.swift */; };
 		8A8D089D241258BF00AAECF0 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D089C241258BF00AAECF0 /* ExerciseDetailViewController.swift */; };
 		8AB2FADB24125AA800450510 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB2FADA24125AA800450510 /* Images.xcassets */; };
-		8AEE85F5243C922B00F90A25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AEE85F4243C922B00F90A25 /* GoogleService-Info.plist */; };
+		8AB324A9244F75C600C2A46A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB324A8244F75C600C2A46A /* HomeViewController.swift */; };
+		8AB324AB244F75E700C2A46A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB324AA244F75E700C2A46A /* AboutViewController.swift */; };
 		8AF31B9A23FC382200366AA3 /* ExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF31B9923FC382200366AA3 /* ExercisesTableViewController.swift */; };
 		8AF31B9D23FDC21C00366AA3 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF31B9B23FDC21C00366AA3 /* ExerciseCell.swift */; };
 		8AF31B9E23FDC21C00366AA3 /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AF31B9C23FDC21C00366AA3 /* ExerciseCell.xib */; };
@@ -28,7 +33,11 @@
 		2230B1DD3257CF9718285295 /* Pods-gameDeneme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gameDeneme.release.xcconfig"; path = "Target Support Files/Pods-gameDeneme/Pods-gameDeneme.release.xcconfig"; sourceTree = "<group>"; };
 		7432EF968857045DD0006102 /* Pods_gameDeneme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gameDeneme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A25AAB4564FD5D88149C73 /* Pods-gameDeneme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gameDeneme.debug.xcconfig"; path = "Target Support Files/Pods-gameDeneme/Pods-gameDeneme.debug.xcconfig"; sourceTree = "<group>"; };
+		8A0E580F2447B7E500610CAF /* EquipmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentCell.swift; sourceTree = "<group>"; };
+		8A0E58102447B7E500610CAF /* EquipmentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EquipmentCell.xib; sourceTree = "<group>"; };
+		8A0E581424488AFE00610CAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A3D16972413A76B00A46FD9 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
+		8A505942244B74A9005B9B63 /* ExplanationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationTableViewCell.swift; sourceTree = "<group>"; };
 		8A6DB6E123EC205400EEC240 /* ProperExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProperExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6DB6E423EC205400EEC240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A6DB6E623EC205400EEC240 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -39,7 +48,8 @@
 		8A86F46024424D470087E255 /* EquipmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentTableViewController.swift; sourceTree = "<group>"; };
 		8A8D089C241258BF00AAECF0 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
 		8AB2FADA24125AA800450510 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8AEE85F4243C922B00F90A25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8AB324A8244F75C600C2A46A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8AB324AA244F75E700C2A46A /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		8AF31B9923FC382200366AA3 /* ExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTableViewController.swift; sourceTree = "<group>"; };
 		8AF31B9B23FDC21C00366AA3 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		8AF31B9C23FDC21C00366AA3 /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
@@ -66,14 +76,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8A0E58132447B7F500610CAF /* EquipmentCell */ = {
+			isa = PBXGroup;
+			children = (
+				8A0E580F2447B7E500610CAF /* EquipmentCell.swift */,
+				8A0E58102447B7E500610CAF /* EquipmentCell.xib */,
+			);
+			path = EquipmentCell;
+			sourceTree = "<group>";
+		};
 		8A39595B23FA5F27006F31A0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				8A6DB6E823EC205400EEC240 /* GameViewController.swift */,
+				8AB324AA244F75E700C2A46A /* AboutViewController.swift */,
+				8AB324A8244F75C600C2A46A /* HomeViewController.swift */,
 				8A86F46024424D470087E255 /* EquipmentTableViewController.swift */,
 				8AF31B9923FC382200366AA3 /* ExercisesTableViewController.swift */,
 				8A8D089C241258BF00AAECF0 /* ExerciseDetailViewController.swift */,
+				8A505944244B74DD005B9B63 /* ExplanationCell */,
 				8AF31B9F23FDC22300366AA3 /* ExerciseCell */,
+				8A0E58132447B7F500610CAF /* EquipmentCell */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,6 +127,14 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		8A505944244B74DD005B9B63 /* ExplanationCell */ = {
+			isa = PBXGroup;
+			children = (
+				8A505942244B74A9005B9B63 /* ExplanationTableViewCell.swift */,
+			);
+			path = ExplanationCell;
+			sourceTree = "<group>";
+		};
 		8A6DB6D823EC205300EEC240 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +163,7 @@
 				8A39595B23FA5F27006F31A0 /* Controller */,
 				8A39595E23FA5F6E006F31A0 /* Assets */,
 				8A6DB6F223EC205500EEC240 /* Info.plist */,
-				8AEE85F4243C922B00F90A25 /* GoogleService-Info.plist */,
+				8A0E581424488AFE00610CAF /* GoogleService-Info.plist */,
 			);
 			path = gameDeneme;
 			sourceTree = "<group>";
@@ -224,11 +255,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A6DB6E723EC205400EEC240 /* art.scnassets in Resources */,
+				8A0E58122447B7E500610CAF /* EquipmentCell.xib in Resources */,
 				8AB2FADB24125AA800450510 /* Images.xcassets in Resources */,
 				8A6DB6F123EC205500EEC240 /* LaunchScreen.storyboard in Resources */,
 				8AF31B9E23FDC21C00366AA3 /* ExerciseCell.xib in Resources */,
 				8A6DB6EC23EC205400EEC240 /* Main.storyboard in Resources */,
-				8AEE85F5243C922B00F90A25 /* GoogleService-Info.plist in Resources */,
+				8A0E581524488AFE00610CAF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +314,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A6DB6E923EC205400EEC240 /* GameViewController.swift in Sources */,
+				8A505943244B74A9005B9B63 /* ExplanationTableViewCell.swift in Sources */,
 				8AF31B9D23FDC21C00366AA3 /* ExerciseCell.swift in Sources */,
 				8A6DB6E523EC205400EEC240 /* AppDelegate.swift in Sources */,
 				8AF5AF8323FE698900A326DB /* UIExtension.swift in Sources */,
 				8A86F46124424D470087E255 /* EquipmentTableViewController.swift in Sources */,
+				8AB324AB244F75E700C2A46A /* AboutViewController.swift in Sources */,
 				8A3D16982413A76B00A46FD9 /* ExerciseModel.swift in Sources */,
+				8AB324A9244F75C600C2A46A /* HomeViewController.swift in Sources */,
+				8A0E58112447B7E500610CAF /* EquipmentCell.swift in Sources */,
 				8AF31B9A23FC382200366AA3 /* ExercisesTableViewController.swift in Sources */,
 				8A8D089D241258BF00AAECF0 /* ExerciseDetailViewController.swift in Sources */,
 			);

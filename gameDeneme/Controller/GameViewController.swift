@@ -14,9 +14,14 @@ class GameViewController: UIViewController,BodyPartProtocol{
     
     var nameToSend: String? {
         didSet{
-            performSegue(withIdentifier: "showEquipment", sender: self)
+            if nameToSend != "Brain" {
+                performSegue(withIdentifier: "showEquipment", sender: self)
+            } else {
+                print("else")
+            }
         }
     }
+    
     func getBodyPart() -> String {
         //Protocol function
         return nameToSend!
@@ -47,8 +52,7 @@ class GameViewController: UIViewController,BodyPartProtocol{
             let result = hitResults[0]
             let name = result.node.geometry!.name
             nameToSend = name
-            
-            
+        
             // get its material
             let material = result.node.geometry!.firstMaterial!
             
@@ -89,49 +93,11 @@ class GameViewController: UIViewController,BodyPartProtocol{
         }
     }
     
-    func chose (name:String) -> Int{
-                
-        if name == "Forearms" {
-            return 1
-        } else if name == "Max.002" {
-            return 2
-        } else if name == "Max.003" {
-            return 3
-        } else if name == "Max.004" {
-            return 4
-        } else if name == "Max.005" {
-            return 5
-        } else if name == "Max.006" {
-            return 6
-        } else if name == "Max.007" {
-            return 7
-        } else if name == "Max.008" {
-            return 8
-        } else if name == "Max.009" {
-            return 9
-        } else if name == "Max.010" {
-            return 10
-        } else if name == "Max.011" {
-            return 11
-        } else if name == "Max.012" {
-            return 12
-        } else if name == "Max.013" {
-            return 13
-        } else if name == "Max.014" {
-            return 14
-        } else if name == "Max.015" {
-            return 15
-        } else {
-            return 0
-        }
-    }
-    
-    
     func createNewScene() -> SCNScene {
         // create a new scene
         let scene = SCNScene(named: "art.scnassets/max.scn")!
-        // add an image to the background of the scene
-        scene.background.contents = UIImage(named: "3")
+        // add an color to the background of the scene
+        scene.background.contents = UIColor.gray
         
         // create and add a camera to the scene
         let cameraNode = SCNNode()
@@ -172,13 +138,8 @@ class GameViewController: UIViewController,BodyPartProtocol{
         // show statistics such as fps and timing information
         scnView.showsStatistics = false
         
-        // configure the view
-//        scnView.backgroundColor = UIColor.black
-        
         // add a tap gesture recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         scnView.addGestureRecognizer(tapGesture)
     }
-    
-
 }

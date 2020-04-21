@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>943525936655-isqhqo9grlnpmnk9nrgjsjs400bje79q.apps.googleusercontent.com</string>
+	<string>386084480266-r6hj8ttrtc6f0712vc4iuohgaksqgf06.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.943525936655-isqhqo9grlnpmnk9nrgjsjs400bje79q</string>
+	<string>com.googleusercontent.apps.386084480266-r6hj8ttrtc6f0712vc4iuohgaksqgf06</string>
 	<key>API_KEY</key>
-	<string>AIzaSyB0E9USKNYI3dtWGM-j6gTsyG5Xmj1MmwE</string>
+	<string>AIzaSyBG4C6GEOMLFoysMdP58FPwKszYeMiAMHw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>943525936655</string>
+	<string>386084480266</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.muhammetTahaGenc.ProperExercise</string>
 	<key>PROJECT_ID</key>
-	<string>proper-exercise-dc9f1</string>
+	<string>workout-guide-38d66</string>
 	<key>STORAGE_BUCKET</key>
-	<string>proper-exercise-dc9f1.appspot.com</string>
+	<string>workout-guide-38d66.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:943525936655:ios:2ce527e2ac2236c746ad7a</string>
+	<string>1:386084480266:ios:c81a44dcf90439c47546f3</string>
 	<key>DATABASE_URL</key>
-	<string>https://proper-exercise-dc9f1.firebaseio.com</string>
+	<string>https://workout-guide-38d66.firebaseio.com</string>
 </dict>
 </plist>

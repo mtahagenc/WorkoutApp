@@ -14,10 +14,12 @@ class GameViewController: UIViewController,BodyPartProtocol{
     
     var nameToSend: String? {
         didSet{
-            if nameToSend != "Brain" {
-                performSegue(withIdentifier: "showEquipment", sender: self)
+            if nameToSend == "Brain" {
+                print("Brain")
+            } else if nameToSend == nil {
+                print("nil")
             } else {
-                print("else")
+                performSegue(withIdentifier: "showEquipment", sender: self)
             }
         }
     }
@@ -132,6 +134,17 @@ class GameViewController: UIViewController,BodyPartProtocol{
         // set the scene to the view
         scnView.scene = scene
         
+        // add a button to the scene
+        let button = UIButton(type: .system)
+        button.tintColor = UIColor.black
+        button.titleLabel?.font = UIFont(name: "Arial", size: 25)
+        button.setTitle("Back", for: .normal)
+        button.sizeToFit()
+        button.addTarget(self, action: #selector(didPressBack), for: .touchUpInside)
+        button.center.x = 50
+        button.frame.origin.y = 20
+        scnView.addSubview(button)
+        
         // allows the user to manipulate the camera
         scnView.allowsCameraControl = true
         
@@ -141,5 +154,9 @@ class GameViewController: UIViewController,BodyPartProtocol{
         // add a tap gesture recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         scnView.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func didPressBack (sender: UIButton!) {
+        dismiss(animated: true, completion: nil)
     }
 }

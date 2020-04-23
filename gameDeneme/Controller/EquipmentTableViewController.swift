@@ -78,6 +78,7 @@ class EquipmentTableViewController: UITableViewController,EquipmentProtocol {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         equipment = "\(delegate!.getBodyPart())-\(equipmentArrayForDatabase[indexPath.row])"
+        
         performSegue(withIdentifier: "showExercises", sender: self)
     }
     

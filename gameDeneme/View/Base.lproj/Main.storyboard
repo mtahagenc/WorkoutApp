@@ -22,7 +22,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="4fk-vj-EDx"/>
                     <connections>
-                        <segue destination="F1E-8A-IoA" kind="show" identifier="showExercises" id="pq6-5h-VKK"/>
+                        <segue destination="F1E-8A-IoA" kind="show" identifier="showExercises" id="moE-T8-ME1"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K09-Be-Zo0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -270,7 +270,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0R-DR-atP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1120" y="75"/>
+            <point key="canvasLocation" x="3163.7681159420295" y="73.660714285714278"/>
         </scene>
         <!--Exercise Detail View Controller-->
         <scene sceneID="ghr-F3-2Nx">
@@ -392,7 +392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paG-ha-fBb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2150.7246376811595" y="75"/>
+            <point key="canvasLocation" x="4818.840579710145" y="73.660714285714278"/>
         </scene>
     </scenes>
     <resources>

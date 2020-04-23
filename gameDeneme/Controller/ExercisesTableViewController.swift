@@ -30,9 +30,6 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
     
     //MARK: - Variables and Constants
     var delegate:EquipmentProtocol?
-    let exercisesArray = ["tPY6QbsXheg","3ml7BH7mNwQ","zvId5KzQGwk","odhXwoS3mDA","bTGPfJUJRh0","6Z15_WdXmVw","VwIomrNRCTI","NlcTeNA61tU"]
-    let baseImageURL = "http://img.youtube.com/vi/"
-    let jpgString = "/0.jpg"
     let db = Firestore.firestore()
     private var exercises: [Exercise] = []
     private var documents: [DocumentSnapshot] = []
@@ -62,7 +59,7 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseCell", for: indexPath) as! ExerciseCell
         cell.exerciseName.text = exercises[indexPath.row].name
-        let urlString = "\(baseImageURL)\(exercises[indexPath.row].id)\(jpgString)"
+        let urlString = "\(PublicURLs().baseImageURL)\(exercises[indexPath.row].id)\(PublicURLs().jpgString)"
         cell.thumbnailImage.setImageWithKF(urlString)
         cell.thumbnailImage.contentMode = .scaleAspectFill
         return cell

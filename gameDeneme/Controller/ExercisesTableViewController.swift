@@ -12,7 +12,7 @@ import Kingfisher
 import Firebase
 
 protocol EquipmentProtocol {
-    func getEquipment() -> String
+    func getEquipment() -> [Exercise]
 }
 
 class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
@@ -31,8 +31,6 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
     //MARK: - Variables and Constants
     var delegate:EquipmentProtocol?
     let db = Firestore.firestore()
-    private var exercises: [Exercise] = []
-    private var documents: [DocumentSnapshot] = []
     
     //MARK: - ViewDidLoad
     override func viewDidLoad() {
@@ -40,7 +38,6 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
         tableView.reloadData()
         registerTableViewCells()
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
-        getData(exerciseName: self.delegate!.getEquipment())
         addSwipe()
     }
     
@@ -48,7 +45,7 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
     //MARK: - TableView Functions
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return exercises.count
+        return delegate?.getEquipment().count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -58,15 +55,16 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseCell", for: indexPath) as! ExerciseCell
-        cell.exerciseName.text = exercises[indexPath.row].name
-        let urlString = "\(PublicURLs().baseImageURL)\(exercises[indexPath.row].id)\(PublicURLs().jpgString)"
+        cell.exerciseName.text = delegate?.getEquipment()[indexPath.row].name
+        let urlString = "\(PublicURLs().baseImageURL)\(delegate?.getEquipment()[indexPath.row].id ?? "")\(PublicURLs().jpgString)"
+        print(urlString)
         cell.thumbnailImage.setImageWithKF(urlString)
         cell.thumbnailImage.contentMode = .scaleAspectFill
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        exerciseToSend = exercises[indexPath.row]
+        exerciseToSend = delegate?.getEquipment()[indexPath.row]
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -81,31 +79,6 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
      }
 
     //MARK: - Functions
-    
-    func getData(exerciseName: String) {
-        db.collection(exerciseName).getDocuments() { (snapshot, error) in
-            
-            guard let snapshot = snapshot else {
-              print("Error fetching snapshot results: \(error!)")
-              return
-            }
-            
-            let models = snapshot.documents.map { (document) -> Exercise in
-            if let model = Exercise(dictionary: document.data()) {
-                return model
-            } else {
-                // Don't use fatalError here in a real app.
-                fatalError("Unable to initialize type \(Exercise.self) with dictionary \(document.data())")
-                }
-            }
-            
-            self.documents = snapshot.documents
-            DispatchQueue.main.async {
-                self.exercises = models
-                self.tableView.reloadData()
-            }
-        }
-    }
     
     func addSwipe() {
         //We are creating a swipe gesture to control our view without buttons

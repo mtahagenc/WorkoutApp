@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 protocol BodyPartProtocol {
     func getBodyPart() -> String
@@ -14,13 +15,21 @@ protocol BodyPartProtocol {
 
 class EquipmentTableViewController: UITableViewController,EquipmentProtocol {
     
-    func getEquipment() -> String {
+    //MARK: - Protocol
+    func getEquipment() -> [Exercise] {
         //Protocol function
-        return equipment!
+        return exercises!
     }
     
-    var equipment: String?
+    
+    //MARK: - Variables
     var delegate:BodyPartProtocol?
+    private var exercises: [Exercise]? {
+        didSet{
+            performSegue(withIdentifier: "showExercises", sender: self)
+        }
+    }
+    let db = Firestore.firestore()
     let equipmentArray = ["Barbell","Body Weight","Dumbbell","Gym","Resistance Band"]
     let equipmentArrayForDatabase = ["Barbell","BodyWeight","Dumbbell","Gym","ResistanceBand"]
     
@@ -77,9 +86,8 @@ class EquipmentTableViewController: UITableViewController,EquipmentProtocol {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        equipment = "\(delegate!.getBodyPart())-\(equipmentArrayForDatabase[indexPath.row])"
         
-        performSegue(withIdentifier: "showExercises", sender: self)
+        getData(exerciseName: "\(delegate!.getBodyPart())-\(equipmentArrayForDatabase[indexPath.row])")
     }
     
     //MARK: - Navigation
@@ -87,6 +95,28 @@ class EquipmentTableViewController: UITableViewController,EquipmentProtocol {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let segu:ExercisesTableViewController = segue.destination as? ExercisesTableViewController {
             segu.delegate = self
+        }
+    }
+    
+    //MARK: - Functions
+    
+    func getData(exerciseName: String) {
+        db.collection(exerciseName).getDocuments() { (snapshot, error) in
+            
+            guard let snapshot = snapshot else {
+              print("Error fetching snapshot results: \(error!)")
+              return
+            }
+            
+            let models = snapshot.documents.map { (document) -> Exercise in
+            if let model = Exercise(dictionary: document.data()) {
+                return model
+            } else {
+                // Don't use fatalError here in a real app.
+                fatalError("Unable to initialize type \(Exercise.self) with dictionary \(document.data())")
+                }
+            }
+            self.exercises = models
         }
     }
     

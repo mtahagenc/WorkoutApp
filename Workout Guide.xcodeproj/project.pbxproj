@@ -27,19 +27,18 @@
 		8AF31B9D23FDC21C00366AA3 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF31B9B23FDC21C00366AA3 /* ExerciseCell.swift */; };
 		8AF31B9E23FDC21C00366AA3 /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AF31B9C23FDC21C00366AA3 /* ExerciseCell.xib */; };
 		8AF5AF8323FE698900A326DB /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5AF8223FE698900A326DB /* UIExtension.swift */; };
-		AE066065EA6A33FDA17CB2A6 /* Pods_gameDeneme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7432EF968857045DD0006102 /* Pods_gameDeneme.framework */; };
+		BB63DB0CCE095F81B81BCE1B /* Pods_Workout_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A06A1987E73D1CE8FCD230A /* Pods_Workout_Guide.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2230B1DD3257CF9718285295 /* Pods-gameDeneme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gameDeneme.release.xcconfig"; path = "Target Support Files/Pods-gameDeneme/Pods-gameDeneme.release.xcconfig"; sourceTree = "<group>"; };
-		7432EF968857045DD0006102 /* Pods_gameDeneme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gameDeneme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82A25AAB4564FD5D88149C73 /* Pods-gameDeneme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gameDeneme.debug.xcconfig"; path = "Target Support Files/Pods-gameDeneme/Pods-gameDeneme.debug.xcconfig"; sourceTree = "<group>"; };
+		289B1CC0805D6F339AD5B179 /* Pods-Workout Guide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout Guide.release.xcconfig"; path = "Target Support Files/Pods-Workout Guide/Pods-Workout Guide.release.xcconfig"; sourceTree = "<group>"; };
+		4A06A1987E73D1CE8FCD230A /* Pods_Workout_Guide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workout_Guide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0E580F2447B7E500610CAF /* EquipmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentCell.swift; sourceTree = "<group>"; };
 		8A0E58102447B7E500610CAF /* EquipmentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EquipmentCell.xib; sourceTree = "<group>"; };
 		8A0E581424488AFE00610CAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A3D16972413A76B00A46FD9 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
 		8A505942244B74A9005B9B63 /* ExplanationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationTableViewCell.swift; sourceTree = "<group>"; };
-		8A6DB6E123EC205400EEC240 /* Proper Exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proper Exercise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A6DB6E123EC205400EEC240 /* Workout Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6DB6E423EC205400EEC240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A6DB6E623EC205400EEC240 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		8A6DB6E823EC205400EEC240 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		8AF31B9B23FDC21C00366AA3 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		8AF31B9C23FDC21C00366AA3 /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
 		8AF5AF8223FE698900A326DB /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		C1B06BDCC591027A1CC765DD /* Pods-Workout Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout Guide.debug.xcconfig"; path = "Target Support Files/Pods-Workout Guide/Pods-Workout Guide.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +63,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE066065EA6A33FDA17CB2A6 /* Pods_gameDeneme.framework in Frameworks */,
+				BB63DB0CCE095F81B81BCE1B /* Pods_Workout_Guide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		426C83CF4B4670109AF115D9 /* Frameworks */ = {
+		3C33DF658A619872BF12451E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7432EF968857045DD0006102 /* Pods_gameDeneme.framework */,
+				4A06A1987E73D1CE8FCD230A /* Pods_Workout_Guide.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,14 +143,14 @@
 				8A6DB6E323EC205400EEC240 /* gameDeneme */,
 				8A6DB6E223EC205400EEC240 /* Products */,
 				9C80DE516436EB4BA5955ED9 /* Pods */,
-				426C83CF4B4670109AF115D9 /* Frameworks */,
+				3C33DF658A619872BF12451E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		8A6DB6E223EC205400EEC240 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A6DB6E123EC205400EEC240 /* Proper Exercise.app */,
+				8A6DB6E123EC205400EEC240 /* Workout Guide.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,8 +191,8 @@
 		9C80DE516436EB4BA5955ED9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				82A25AAB4564FD5D88149C73 /* Pods-gameDeneme.debug.xcconfig */,
-				2230B1DD3257CF9718285295 /* Pods-gameDeneme.release.xcconfig */,
+				C1B06BDCC591027A1CC765DD /* Pods-Workout Guide.debug.xcconfig */,
+				289B1CC0805D6F339AD5B179 /* Pods-Workout Guide.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -200,23 +200,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8A6DB6E023EC205300EEC240 /* gameDeneme */ = {
+		8A6DB6E023EC205300EEC240 /* Workout Guide */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A6DB6F523EC205500EEC240 /* Build configuration list for PBXNativeTarget "gameDeneme" */;
+			buildConfigurationList = 8A6DB6F523EC205500EEC240 /* Build configuration list for PBXNativeTarget "Workout Guide" */;
 			buildPhases = (
-				A6172F1ABBA341D2F4604FBF /* [CP] Check Pods Manifest.lock */,
+				23D094AF7DE8A0E80D100386 /* [CP] Check Pods Manifest.lock */,
 				8A6DB6DD23EC205300EEC240 /* Sources */,
 				8A6DB6DE23EC205300EEC240 /* Frameworks */,
 				8A6DB6DF23EC205300EEC240 /* Resources */,
-				5168B0BCA76C95021242FD02 /* [CP] Embed Pods Frameworks */,
+				A88C4EA4E586F716D2E76398 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = gameDeneme;
+			name = "Workout Guide";
 			productName = gameDeneme;
-			productReference = 8A6DB6E123EC205400EEC240 /* Proper Exercise.app */;
+			productReference = 8A6DB6E123EC205400EEC240 /* Workout Guide.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -247,7 +247,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A6DB6E023EC205300EEC240 /* gameDeneme */,
+				8A6DB6E023EC205300EEC240 /* Workout Guide */,
 			);
 		};
 /* End PBXProject section */
@@ -270,24 +270,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5168B0BCA76C95021242FD02 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-gameDeneme/Pods-gameDeneme-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-gameDeneme/Pods-gameDeneme-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gameDeneme/Pods-gameDeneme-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A6172F1ABBA341D2F4604FBF /* [CP] Check Pods Manifest.lock */ = {
+		23D094AF7DE8A0E80D100386 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,11 +285,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-gameDeneme-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Workout Guide-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A88C4EA4E586F716D2E76398 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Workout Guide/Pods-Workout Guide-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Workout Guide/Pods-Workout Guide-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Workout Guide/Pods-Workout Guide-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -470,7 +470,7 @@
 		};
 		8A6DB6F623EC205500EEC240 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82A25AAB4564FD5D88149C73 /* Pods-gameDeneme.debug.xcconfig */;
+			baseConfigurationReference = C1B06BDCC591027A1CC765DD /* Pods-Workout Guide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -482,7 +482,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.muhammetTahaGenc.ProperExercise;
-				PRODUCT_NAME = "Proper Exercise";
+				PRODUCT_NAME = "Workout Guide";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -490,7 +490,7 @@
 		};
 		8A6DB6F723EC205500EEC240 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2230B1DD3257CF9718285295 /* Pods-gameDeneme.release.xcconfig */;
+			baseConfigurationReference = 289B1CC0805D6F339AD5B179 /* Pods-Workout Guide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -502,7 +502,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.muhammetTahaGenc.ProperExercise;
-				PRODUCT_NAME = "Proper Exercise";
+				PRODUCT_NAME = "Workout Guide";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -520,7 +520,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A6DB6F523EC205500EEC240 /* Build configuration list for PBXNativeTarget "gameDeneme" */ = {
+		8A6DB6F523EC205500EEC240 /* Build configuration list for PBXNativeTarget "Workout Guide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A6DB6F623EC205500EEC240 /* Debug */,

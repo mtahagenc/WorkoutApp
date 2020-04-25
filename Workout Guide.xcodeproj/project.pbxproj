@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8A0E58112447B7E500610CAF /* EquipmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E580F2447B7E500610CAF /* EquipmentCell.swift */; };
 		8A0E58122447B7E500610CAF /* EquipmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0E58102447B7E500610CAF /* EquipmentCell.xib */; };
-		8A0E581524488AFE00610CAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A0E581424488AFE00610CAF /* GoogleService-Info.plist */; };
 		8A3D16982413A76B00A46FD9 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3D16972413A76B00A46FD9 /* ExerciseModel.swift */; };
 		8A505943244B74A9005B9B63 /* ExplanationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A505942244B74A9005B9B63 /* ExplanationTableViewCell.swift */; };
 		8A6DB6E523EC205400EEC240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DB6E423EC205400EEC240 /* AppDelegate.swift */; };
@@ -19,6 +18,7 @@
 		8A6DB6F123EC205500EEC240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6DB6EF23EC205500EEC240 /* LaunchScreen.storyboard */; };
 		8A86F46124424D470087E255 /* EquipmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A86F46024424D470087E255 /* EquipmentTableViewController.swift */; };
 		8A8D089D241258BF00AAECF0 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D089C241258BF00AAECF0 /* ExerciseDetailViewController.swift */; };
+		8A954A0F2454694E001FC5D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A954A0E2454694E001FC5D2 /* GoogleService-Info.plist */; };
 		8AB2FADB24125AA800450510 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB2FADA24125AA800450510 /* Images.xcassets */; };
 		8AB324A9244F75C600C2A46A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB324A8244F75C600C2A46A /* HomeViewController.swift */; };
 		8AB324AB244F75E700C2A46A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB324AA244F75E700C2A46A /* AboutViewController.swift */; };
@@ -35,7 +35,6 @@
 		4A06A1987E73D1CE8FCD230A /* Pods_Workout_Guide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workout_Guide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0E580F2447B7E500610CAF /* EquipmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentCell.swift; sourceTree = "<group>"; };
 		8A0E58102447B7E500610CAF /* EquipmentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EquipmentCell.xib; sourceTree = "<group>"; };
-		8A0E581424488AFE00610CAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A3D16972413A76B00A46FD9 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
 		8A505942244B74A9005B9B63 /* ExplanationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationTableViewCell.swift; sourceTree = "<group>"; };
 		8A6DB6E123EC205400EEC240 /* Workout Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		8A6DB6F223EC205500EEC240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A86F46024424D470087E255 /* EquipmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentTableViewController.swift; sourceTree = "<group>"; };
 		8A8D089C241258BF00AAECF0 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
+		8A954A0E2454694E001FC5D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8AB2FADA24125AA800450510 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8AB324A8244F75C600C2A46A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8AB324AA244F75E700C2A46A /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 				8A39595B23FA5F27006F31A0 /* Controller */,
 				8A39595E23FA5F6E006F31A0 /* Assets */,
 				8A6DB6F223EC205500EEC240 /* Info.plist */,
-				8A0E581424488AFE00610CAF /* GoogleService-Info.plist */,
+				8A954A0E2454694E001FC5D2 /* GoogleService-Info.plist */,
 			);
 			path = gameDeneme;
 			sourceTree = "<group>";
@@ -257,13 +257,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A954A0F2454694E001FC5D2 /* GoogleService-Info.plist in Resources */,
 				8A6DB6E723EC205400EEC240 /* art.scnassets in Resources */,
 				8A0E58122447B7E500610CAF /* EquipmentCell.xib in Resources */,
 				8AB2FADB24125AA800450510 /* Images.xcassets in Resources */,
 				8A6DB6F123EC205500EEC240 /* LaunchScreen.storyboard in Resources */,
 				8AF31B9E23FDC21C00366AA3 /* ExerciseCell.xib in Resources */,
 				8A6DB6EC23EC205400EEC240 /* Main.storyboard in Resources */,
-				8A0E581524488AFE00610CAF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

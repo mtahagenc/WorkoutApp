@@ -77,5 +77,3 @@ class ExerciseDetailViewController: UIViewController, UITableViewDelegate, UITab
         }
     }
 }
-
-

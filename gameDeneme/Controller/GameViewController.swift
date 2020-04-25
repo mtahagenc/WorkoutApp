@@ -10,8 +10,16 @@ import UIKit
 import SceneKit
 import Firebase
 
-class GameViewController: UIViewController,BodyPartProtocol{
+class GameViewController: UIViewController,BodyPartProtocol,GADInterstitialDelegate{
     
+    //MARK: - Protocol Func
+    func getBodyPart() -> String {
+        //Protocol function
+        return nameToSend!
+    }
+
+    
+    //MARK: - Variables
     var nameToSend: String? {
         didSet{
             if nameToSend == "Brain" {
@@ -24,61 +32,29 @@ class GameViewController: UIViewController,BodyPartProtocol{
         }
     }
     
-    func getBodyPart() -> String {
-        //Protocol function
-        return nameToSend!
-    }
+    //Create interstitial
+    var interstitial: GADInterstitial!
     
+    //MARK: - ViewDidLoad and WillAppear
     override func viewDidLoad() {
         super.viewDidLoad()
         createSCNView(scene: createNewScene())
+        interstitial = createAndLoadInterstitial()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        showAd()
     }
         
+    
+    //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let segu:EquipmentTableViewController = segue.destination as? EquipmentTableViewController {
             segu.delegate = self
         }
     }
     
-    @objc func handleTap(_ gestureRecognize: UIGestureRecognizer) {
-        
-        // retrieve the SCNView
-        let scnView = self.view as! SCNView
-        
-        // check what nodes are tapped
-        let p = gestureRecognize.location(in: scnView)
-        let hitResults = scnView.hitTest(p, options: [:])
-        // check that we clicked on at least one object
-        if hitResults.count > 0 {
-            // retrieved the first clicked object
-            let result = hitResults[0]
-            let name = result.node.geometry!.name
-            nameToSend = name
-        
-            // get its material
-            let material = result.node.geometry!.firstMaterial!
-            
-            
-            // highlight it
-            SCNTransaction.begin()
-            SCNTransaction.animationDuration = 0.5
-            
-            // on completion - unhighlight
-            SCNTransaction.completionBlock = {
-                SCNTransaction.begin()
-                SCNTransaction.animationDuration = 0.5
-                
-                material.emission.contents = UIColor.black
-                
-                SCNTransaction.commit()
-            }
-            
-            material.emission.contents = UIColor.red
-            
-            SCNTransaction.commit()
-        }
-    }
-    
+    //MARK: - SceneKit Func
     override var shouldAutorotate: Bool {
         return true
     }
@@ -156,7 +132,75 @@ class GameViewController: UIViewController,BodyPartProtocol{
         scnView.addGestureRecognizer(tapGesture)
     }
     
+    //MARK: Functions
     @objc func didPressBack (sender: UIButton!) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func handleTap(_ gestureRecognize: UIGestureRecognizer) {
+        
+        // retrieve the SCNView
+        let scnView = self.view as! SCNView
+        
+        // check what nodes are tapped
+        let p = gestureRecognize.location(in: scnView)
+        let hitResults = scnView.hitTest(p, options: [:])
+        // check that we clicked on at least one object
+        if hitResults.count > 0 {
+            // retrieved the first clicked object
+            let result = hitResults[0]
+            let name = result.node.geometry!.name
+            nameToSend = name
+        
+            // get its material
+            let material = result.node.geometry!.firstMaterial!
+            
+            
+            // highlight it
+            SCNTransaction.begin()
+            SCNTransaction.animationDuration = 0.5
+            
+            // on completion - unhighlight
+            SCNTransaction.completionBlock = {
+                SCNTransaction.begin()
+                SCNTransaction.animationDuration = 0.5
+                
+                material.emission.contents = UIColor.black
+                
+                SCNTransaction.commit()
+            }
+            
+            material.emission.contents = UIColor.red
+            
+            SCNTransaction.commit()
+        }
+    }
+    
+    //MARK: - Admob Functions
+    
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+
+        interstitial.delegate = self
+        interstitial.load(GADRequest())
+        
+        return interstitial
+    }
+
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+      interstitial = createAndLoadInterstitial()
+    }
+    
+    func showAd(){
+        let number = Int.random(in: 0 ... 10)
+        if number % 5 == 0 {
+            if self.interstitial.isReady {
+              self.interstitial.present(fromRootViewController: self)
+                
+            } else {
+                print("Ad wasn't ready")
+            }
+        }
     }
 }

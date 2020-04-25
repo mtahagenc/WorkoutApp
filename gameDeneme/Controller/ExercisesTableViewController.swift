@@ -15,13 +15,14 @@ protocol EquipmentProtocol {
     func getEquipment() -> [Exercise]
 }
 
-class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
+class ExercisesTableViewController: UITableViewController, ExerciseProtocol, GADInterstitialDelegate{
     
     var exerciseToSend: Exercise? {
         didSet{
             performSegue(withIdentifier: "showDetail", sender: self)
         }
     }
+    
     
     func getExercise() -> Exercise {
         return exerciseToSend!
@@ -30,15 +31,24 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
     
     //MARK: - Variables and Constants
     var delegate:EquipmentProtocol?
-    let db = Firestore.firestore()
     
-    //MARK: - ViewDidLoad
+    //Create interstitial
+    var interstitial: GADInterstitial!
+
+    
+    //MARK: - ViewDidLoad and ViewWillAppear
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
         registerTableViewCells()
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         addSwipe()
+        
+        interstitial = createAndLoadInterstitial()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        showAd()
     }
     
     
@@ -57,7 +67,6 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseCell", for: indexPath) as! ExerciseCell
         cell.exerciseName.text = delegate?.getEquipment()[indexPath.row].name
         let urlString = "\(PublicURLs().baseImageURL)\(delegate?.getEquipment()[indexPath.row].id ?? "")\(PublicURLs().jpgString)"
-        print(urlString)
         cell.thumbnailImage.setImageWithKF(urlString)
         cell.thumbnailImage.contentMode = .scaleAspectFill
         return cell
@@ -67,6 +76,7 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
         exerciseToSend = delegate?.getEquipment()[indexPath.row]
     }
     
+    //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let des = segue.destination as! ExerciseDetailViewController
         des.delegate = self
@@ -107,6 +117,34 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
             
         } else if direction == .down {
             
+        }
+    }
+    
+    //MARK: - Functions for Admob
+    
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+
+        interstitial.delegate = self
+        interstitial.load(GADRequest())
+        
+        return interstitial
+    }
+
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+      interstitial = createAndLoadInterstitial()
+    }
+    
+    func showAd(){
+        let number = Int.random(in: 0 ... 10)
+        if number % 5 == 0 {
+            if self.interstitial.isReady {
+              self.interstitial.present(fromRootViewController: self)
+                
+            } else {
+                print("Ad wasn't ready")
+            }
         }
     }
 }

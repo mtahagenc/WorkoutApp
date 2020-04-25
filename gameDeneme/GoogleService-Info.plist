@@ -32,5 +32,7 @@
 	<string>1:386084480266:ios:c81a44dcf90439c47546f3</string>
 	<key>DATABASE_URL</key>
 	<string>https://workout-guide-38d66.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-2165652866075879~1494460904</string>
 </dict>
 </plist>

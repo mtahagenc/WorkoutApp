@@ -22,7 +22,7 @@ class EquipmentTableViewController: UITableViewController,EquipmentProtocol {
     }
     
     
-    //MARK: - Variables
+    //MARK: - Variables adn Constants
     var delegate:BodyPartProtocol?
     private var exercises: [Exercise]? {
         didSet{

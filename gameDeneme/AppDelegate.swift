@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        //App id: ca-app-pub-2165652866075879~1494460904
+        //Ad id: ca-app-pub-2165652866075879/1713489733
+        
         // Use Firebase library to configure APIs.
         FirebaseApp.configure()
 

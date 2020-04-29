@@ -10,7 +10,7 @@
         <!--Equipment Table View Controller-->
         <scene sceneID="D9u-M2-IlY">
             <objects>
-                <tableViewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="gJJ-fc-OZD" customClass="EquipmentTableViewController" customModule="ProperExercise" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="gJJ-fc-OZD" customClass="EquipmentTableViewController" customModule="Workout_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EAo-58-zN3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,12 +27,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K09-Be-Zo0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13" y="75"/>
+            <point key="canvasLocation" x="-139" y="75"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="9nf-LM-08J">
             <objects>
-                <viewController id="IDf-fe-k4B" customClass="HomeViewController" customModule="ProperExercise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IDf-fe-k4B" customClass="HomeViewController" customModule="Workout_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LBS-9I-AeR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,17 +55,17 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="hl6-rn-ukx">
-                                                        <rect key="frame" x="103.5" y="0.0" width="207" height="238.5"/>
+                                                        <rect key="frame" x="103.5" y="0.0" width="207" height="264.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZnS-6t-kHf">
-                                                                <rect key="frame" x="0.0" y="0.0" width="207" height="119.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="207" height="132.5"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IwL-kY-1Fo">
-                                                                        <rect key="frame" x="0.0" y="1" width="207" height="90.5"/>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="IwL-kY-1Fo">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="103"/>
                                                                         <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Guide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArM-xg-6N7">
-                                                                        <rect key="frame" x="0.0" y="93" width="207" height="26.5"/>
+                                                                        <rect key="frame" x="0.0" y="103" width="207" height="29.5"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -80,7 +80,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xad-Pl-Y8p">
-                                                                <rect key="frame" x="0.0" y="119.5" width="207" height="119"/>
+                                                                <rect key="frame" x="0.0" y="132.5" width="207" height="132"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                             </view>
                                                         </subviews>
@@ -137,7 +137,7 @@
                                                         <rect key="frame" x="0.0" y="168.5" width="207" height="58.5"/>
                                                         <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                                        <state key="normal" title="Start">
+                                                        <state key="normal" title="Başla">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -183,13 +183,12 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDg-Uc-QJs">
-                                <rect key="frame" x="167" y="851" width="80" height="25"/>
+                                <rect key="frame" x="175" y="851" width="64" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="20A-aD-bq8"/>
-                                    <constraint firstAttribute="width" constant="80" id="sUx-hQ-deS"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="About"/>
+                                <state key="normal" title="Hakkında"/>
                                 <connections>
                                     <action selector="aboutBtn:" destination="IDf-fe-k4B" eventType="touchUpInside" id="LUH-ph-Tr4"/>
                                 </connections>
@@ -219,11 +218,27 @@
         <!--About View Controller-->
         <scene sceneID="s6T-1h-39y">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="WGf-2U-egN" customClass="AboutViewController" customModule="ProperExercise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="WGf-2U-egN" customClass="AboutViewController" customModule="Workout_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WMt-Y9-ikx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3r-ar-l1w">
+                                <rect key="frame" x="10" y="54" width="394" height="788"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="S3r-ar-l1w" firstAttribute="leading" secondItem="3Bl-Ya-1e1" secondAttribute="leading" constant="10" id="B4s-eO-qha"/>
+                            <constraint firstItem="3Bl-Ya-1e1" firstAttribute="bottom" secondItem="S3r-ar-l1w" secondAttribute="bottom" constant="20" id="C2b-yg-yUC"/>
+                            <constraint firstItem="S3r-ar-l1w" firstAttribute="top" secondItem="3Bl-Ya-1e1" secondAttribute="top" constant="10" id="UZp-3d-bvn"/>
+                            <constraint firstItem="3Bl-Ya-1e1" firstAttribute="trailing" secondItem="S3r-ar-l1w" secondAttribute="trailing" constant="10" id="Yzp-J1-Q7o"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3Bl-Ya-1e1"/>
                     </view>
                     <navigationItem key="navigationItem" id="Dm9-yr-Mg0"/>
@@ -235,7 +250,7 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BV1-FR-VrT" customClass="GameViewController" customModule="ProperExercise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BV1-FR-VrT" customClass="GameViewController" customModule="Workout_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" allowsCameraControl="YES" id="3se-qz-xqx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,7 +268,7 @@
         <!--Exercises Table View Controller-->
         <scene sceneID="TDM-zn-1L3">
             <objects>
-                <tableViewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="F1E-8A-IoA" customClass="ExercisesTableViewController" customModule="ProperExercise" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="F1E-8A-IoA" customClass="ExercisesTableViewController" customModule="Workout_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="n8N-m8-rJx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,12 +285,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0R-DR-atP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3163.7681159420295" y="73.660714285714278"/>
+            <point key="canvasLocation" x="825" y="75"/>
         </scene>
         <!--Exercise Detail View Controller-->
         <scene sceneID="ghr-F3-2Nx">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="NLT-W9-VTW" customClass="ExerciseDetailViewController" customModule="ProperExercise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="NLT-W9-VTW" customClass="ExerciseDetailViewController" customModule="Workout_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kAp-RA-375">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,7 +322,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="exerciseDetail" id="a6a-af-hzm" customClass="ExplanationTableViewCell" customModule="ProperExercise" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="exerciseDetail" id="a6a-af-hzm" customClass="ExplanationTableViewCell" customModule="Workout_Guide" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="394" height="41"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a6a-af-hzm" id="Njm-XE-3Yz">
@@ -392,11 +407,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paG-ha-fBb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4818.840579710145" y="73.660714285714278"/>
+            <point key="canvasLocation" x="1788" y="75"/>
         </scene>
     </scenes>
     <resources>
         <image name="circle.fill" catalog="system" width="64" height="60"/>
-        <image name="dot.square.fill" catalog="system" width="64" height="56"/>
+        <image name="iTunesArtwork" width="1024" height="1024"/>
     </resources>
 </document>

@@ -23,4 +23,5 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         startBtnOutlet.layer.cornerRadius = 6
     }
+    
 }

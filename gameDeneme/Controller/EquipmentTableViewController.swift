@@ -30,7 +30,7 @@ class EquipmentTableViewController: UITableViewController,EquipmentProtocol {
         }
     }
     let db = Firestore.firestore()
-    let equipmentArray = ["Barbell","Body Weight","Dumbbell","Gym","Resistance Band"]
+    let equipmentArray = ["Halter","Vücut Ağırlığı","Dambıl","Spor Salonu","Direnç Bandı"]
     let equipmentArrayForDatabase = ["Barbell","BodyWeight","Dumbbell","Gym","ResistanceBand"]
     
     override func viewDidLoad() {
@@ -44,7 +44,7 @@ class EquipmentTableViewController: UITableViewController,EquipmentProtocol {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        (view.frame.height - 44)/5
+        (view.frame.height - 20)/5
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -10,7 +10,7 @@ import UIKit
 import SceneKit
 import Firebase
 
-class GameViewController: UIViewController,BodyPartProtocol,GADInterstitialDelegate{
+class GameViewController: UIViewController,BodyPartProtocol{
     
     //MARK: - Protocol Func
     func getBodyPart() -> String {
@@ -32,20 +32,12 @@ class GameViewController: UIViewController,BodyPartProtocol,GADInterstitialDeleg
         }
     }
     
-    //Create interstitial
-    var interstitial: GADInterstitial!
-    
     //MARK: - ViewDidLoad and WillAppear
     override func viewDidLoad() {
         super.viewDidLoad()
         createSCNView(scene: createNewScene())
-        interstitial = createAndLoadInterstitial()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        showAd()
-    }
-        
     
     //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -89,7 +81,7 @@ class GameViewController: UIViewController,BodyPartProtocol,GADInterstitialDeleg
         let firstLightNode = SCNNode()
         firstLightNode.light = SCNLight()
         firstLightNode.light!.type = .omni
-        firstLightNode.position = SCNVector3(x: 0, y: 7, z: 10)
+        firstLightNode.position = SCNVector3(x: 0, y: 0, z: 17)
         scene.rootNode.addChildNode(firstLightNode)
 
         
@@ -97,7 +89,7 @@ class GameViewController: UIViewController,BodyPartProtocol,GADInterstitialDeleg
         let secondLightNode = SCNNode()
         secondLightNode.light = SCNLight()
         secondLightNode.light!.type = .omni
-        secondLightNode.position = SCNVector3(x: 0, y: 10, z: -10)
+        secondLightNode.position = SCNVector3(x: 0, y: 0, z: -17)
         scene.rootNode.addChildNode(secondLightNode)
         
         return scene
@@ -175,32 +167,5 @@ class GameViewController: UIViewController,BodyPartProtocol,GADInterstitialDeleg
             SCNTransaction.commit()
         }
     }
-    
-    //MARK: - Admob Functions
-    
-    
-    func createAndLoadInterstitial() -> GADInterstitial {
-        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
 
-        interstitial.delegate = self
-        interstitial.load(GADRequest())
-        
-        return interstitial
-    }
-
-    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
-      interstitial = createAndLoadInterstitial()
-    }
-    
-    func showAd(){
-        let number = Int.random(in: 0 ... 10)
-        if number % 5 == 0 {
-            if self.interstitial.isReady {
-              self.interstitial.present(fromRootViewController: self)
-                
-            } else {
-                print("Ad wasn't ready")
-            }
-        }
-    }
 }

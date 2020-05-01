@@ -15,7 +15,7 @@ protocol EquipmentProtocol {
     func getEquipment() -> [Exercise]
 }
 
-class ExercisesTableViewController: UITableViewController, ExerciseProtocol, GADInterstitialDelegate{
+class ExercisesTableViewController: UITableViewController, ExerciseProtocol{
     
     var exerciseToSend: Exercise? {
         didSet{
@@ -31,9 +31,6 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol, GAD
     
     //MARK: - Variables and Constants
     var delegate:EquipmentProtocol?
-    
-    //Create interstitial
-    var interstitial: GADInterstitial!
 
     
     //MARK: - ViewDidLoad and ViewWillAppear
@@ -44,13 +41,7 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol, GAD
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         addSwipe()
         
-        interstitial = createAndLoadInterstitial()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        showAd()
-    }
-    
     
     //MARK: - TableView Functions
     
@@ -120,31 +111,31 @@ class ExercisesTableViewController: UITableViewController, ExerciseProtocol, GAD
         }
     }
     
+    
     //MARK: - Functions for Admob
     
-    
-    func createAndLoadInterstitial() -> GADInterstitial {
-        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
-
-        interstitial.delegate = self
-        interstitial.load(GADRequest())
-        
-        return interstitial
-    }
-
-    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
-      interstitial = createAndLoadInterstitial()
-    }
-    
-    func showAd(){
-        let number = Int.random(in: 0 ... 10)
-        if number % 5 == 0 {
-            if self.interstitial.isReady {
-              self.interstitial.present(fromRootViewController: self)
-                
-            } else {
-                print("Ad wasn't ready")
-            }
-        }
-    }
+//    func createAndLoadInterstitial() -> GADInterstitial {
+//        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+//
+//        interstitial.delegate = self
+//        interstitial.load(GADRequest())
+//
+//        return interstitial
+//    }
+//
+//    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+//      interstitial = createAndLoadInterstitial()
+//    }
+//
+//    func showAd(){
+//        let number = Int.random(in: 0 ... 10)
+//        if number % 5 == 0 {
+//            if self.interstitial.isReady {
+//              self.interstitial.present(fromRootViewController: self)
+//
+//            } else {
+//                print("Ad wasn't ready")
+//            }
+//        }
+//    }
 }

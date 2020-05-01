@@ -79,8 +79,8 @@ class EquipmentTableViewController: UITableViewController,EquipmentProtocol {
         } else if indexPath.row == 4 {
             cell.backgroundColor = UIColor(red: 15, green: 15, blue: 15)
             cell.exerciseName.textColor = UIColor(red: 227, green: 233, blue: 237)
-            cell.leftImage.image = UIImage(named: equipmentArray[indexPath.row])
-            cell.rightImage.image = UIImage(named: equipmentArray[indexPath.row])
+            cell.leftImage.image = UIImage(named: "Direnc Bandı")
+            cell.rightImage.image = UIImage(named: "Direnc Bandı")
         }
         return cell
     }

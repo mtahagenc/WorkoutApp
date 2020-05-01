@@ -22,7 +22,7 @@ class ExerciseDetailViewController: UIViewController, UITableViewDelegate, UITab
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var videoView: WKYTPlayerView!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         videoView.load(withVideoId: delegate!.getExercise().id)
@@ -60,7 +60,6 @@ class ExerciseDetailViewController: UIViewController, UITableViewDelegate, UITab
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 600
         tableView.separatorStyle = .none
-        tableView.separatorColor = .white
     }
 
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {

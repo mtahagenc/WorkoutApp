@@ -19,10 +19,16 @@
 		8A86F46124424D470087E255 /* EquipmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A86F46024424D470087E255 /* EquipmentTableViewController.swift */; };
 		8A8D089D241258BF00AAECF0 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D089C241258BF00AAECF0 /* ExerciseDetailViewController.swift */; };
 		8A954A0F2454694E001FC5D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A954A0E2454694E001FC5D2 /* GoogleService-Info.plist */; };
+		8AA10BF224614479001CBCEB /* BookDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA10BF024614479001CBCEB /* BookDetailCell.swift */; };
+		8AA10BF324614479001CBCEB /* BookDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA10BF124614479001CBCEB /* BookDetailCell.xib */; };
 		8AB2FADB24125AA800450510 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB2FADA24125AA800450510 /* Images.xcassets */; };
 		8AB324A9244F75C600C2A46A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB324A8244F75C600C2A46A /* HomeViewController.swift */; };
 		8AB324AB244F75E700C2A46A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB324AA244F75E700C2A46A /* AboutViewController.swift */; };
 		8AB324AD244F9E7100C2A46A /* PublicURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB324AC244F9E7100C2A46A /* PublicURLs.swift */; };
+		8ADA3DB1245D96A600593DAD /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA3DAF245D96A500593DAD /* BookCell.swift */; };
+		8ADA3DB2245D96A600593DAD /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ADA3DB0245D96A500593DAD /* BookCell.xib */; };
+		8ADA3DB5245D981300593DAD /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA3DB4245D981300593DAD /* BookTableViewController.swift */; };
+		8AF17748245EEBD300A1AF71 /* BooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF17747245EEBD200A1AF71 /* BooksModel.swift */; };
 		8AF31B9A23FC382200366AA3 /* ExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF31B9923FC382200366AA3 /* ExercisesTableViewController.swift */; };
 		8AF31B9D23FDC21C00366AA3 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF31B9B23FDC21C00366AA3 /* ExerciseCell.swift */; };
 		8AF31B9E23FDC21C00366AA3 /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AF31B9C23FDC21C00366AA3 /* ExerciseCell.xib */; };
@@ -47,10 +53,16 @@
 		8A86F46024424D470087E255 /* EquipmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentTableViewController.swift; sourceTree = "<group>"; };
 		8A8D089C241258BF00AAECF0 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
 		8A954A0E2454694E001FC5D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8AA10BF024614479001CBCEB /* BookDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailCell.swift; sourceTree = "<group>"; };
+		8AA10BF124614479001CBCEB /* BookDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookDetailCell.xib; sourceTree = "<group>"; };
 		8AB2FADA24125AA800450510 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8AB324A8244F75C600C2A46A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8AB324AA244F75E700C2A46A /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		8AB324AC244F9E7100C2A46A /* PublicURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicURLs.swift; sourceTree = "<group>"; };
+		8ADA3DAF245D96A500593DAD /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		8ADA3DB0245D96A500593DAD /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		8ADA3DB4245D981300593DAD /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
+		8AF17747245EEBD200A1AF71 /* BooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksModel.swift; sourceTree = "<group>"; };
 		8AF31B9923FC382200366AA3 /* ExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTableViewController.swift; sourceTree = "<group>"; };
 		8AF31B9B23FDC21C00366AA3 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		8AF31B9C23FDC21C00366AA3 /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
@@ -93,9 +105,12 @@
 				8A6DB6E823EC205400EEC240 /* GameViewController.swift */,
 				8AB324AA244F75E700C2A46A /* AboutViewController.swift */,
 				8AB324A8244F75C600C2A46A /* HomeViewController.swift */,
+				8ADA3DB4245D981300593DAD /* BookTableViewController.swift */,
 				8A86F46024424D470087E255 /* EquipmentTableViewController.swift */,
 				8AF31B9923FC382200366AA3 /* ExercisesTableViewController.swift */,
 				8A8D089C241258BF00AAECF0 /* ExerciseDetailViewController.swift */,
+				8AA10BF424614A78001CBCEB /* BookDetailCell */,
+				8ADA3DB3245D96AD00593DAD /* BookCell */,
 				8A505944244B74DD005B9B63 /* ExplanationCell */,
 				8AF31B9F23FDC22300366AA3 /* ExerciseCell */,
 				8A0E58132447B7F500610CAF /* EquipmentCell */,
@@ -116,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				8A3D16972413A76B00A46FD9 /* ExerciseModel.swift */,
+				8AF17747245EEBD200A1AF71 /* BooksModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +184,24 @@
 				8A954A0E2454694E001FC5D2 /* GoogleService-Info.plist */,
 			);
 			path = gameDeneme;
+			sourceTree = "<group>";
+		};
+		8AA10BF424614A78001CBCEB /* BookDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				8AA10BF024614479001CBCEB /* BookDetailCell.swift */,
+				8AA10BF124614479001CBCEB /* BookDetailCell.xib */,
+			);
+			path = BookDetailCell;
+			sourceTree = "<group>";
+		};
+		8ADA3DB3245D96AD00593DAD /* BookCell */ = {
+			isa = PBXGroup;
+			children = (
+				8ADA3DAF245D96A500593DAD /* BookCell.swift */,
+				8ADA3DB0245D96A500593DAD /* BookCell.xib */,
+			);
+			path = BookCell;
 			sourceTree = "<group>";
 		};
 		8AF31B9F23FDC22300366AA3 /* ExerciseCell */ = {
@@ -257,6 +291,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ADA3DB2245D96A600593DAD /* BookCell.xib in Resources */,
+				8AA10BF324614479001CBCEB /* BookDetailCell.xib in Resources */,
 				8A954A0F2454694E001FC5D2 /* GoogleService-Info.plist in Resources */,
 				8A6DB6E723EC205400EEC240 /* art.scnassets in Resources */,
 				8A0E58122447B7E500610CAF /* EquipmentCell.xib in Resources */,
@@ -326,7 +362,11 @@
 				8AB324AB244F75E700C2A46A /* AboutViewController.swift in Sources */,
 				8A3D16982413A76B00A46FD9 /* ExerciseModel.swift in Sources */,
 				8AB324A9244F75C600C2A46A /* HomeViewController.swift in Sources */,
+				8AF17748245EEBD300A1AF71 /* BooksModel.swift in Sources */,
+				8ADA3DB5245D981300593DAD /* BookTableViewController.swift in Sources */,
+				8ADA3DB1245D96A600593DAD /* BookCell.swift in Sources */,
 				8A0E58112447B7E500610CAF /* EquipmentCell.swift in Sources */,
+				8AA10BF224614479001CBCEB /* BookDetailCell.swift in Sources */,
 				8AF31B9A23FC382200366AA3 /* ExercisesTableViewController.swift in Sources */,
 				8A8D089D241258BF00AAECF0 /* ExerciseDetailViewController.swift in Sources */,
 			);

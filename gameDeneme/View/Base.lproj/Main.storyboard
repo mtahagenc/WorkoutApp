@@ -219,13 +219,13 @@
         <!--About View Controller-->
         <scene sceneID="s6T-1h-39y">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="WGf-2U-egN" customClass="AboutViewController" customModule="Workout_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WGf-2U-egN" customClass="AboutViewController" customModule="Workout_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WMt-Y9-ikx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Workout Guide v1.0" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3r-ar-l1w">
-                                <rect key="frame" x="10" y="54" width="394" height="788"/>
+                                <rect key="frame" x="10" y="10" width="394" height="778"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -250,6 +250,42 @@
             </objects>
             <point key="canvasLocation" x="-2104" y="850"/>
         </scene>
+        <!--Yüz Yılın 100 Kitabı (Le Monde)-->
+        <scene sceneID="GTr-fg-Lql">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="z8C-aH-ziH" customClass="BookTableViewController" customModule="Workout_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1ne-h8-eLU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="z8C-aH-ziH" id="Wt3-cC-Zt0"/>
+                            <outlet property="delegate" destination="z8C-aH-ziH" id="Mmm-s4-Iaf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Yüz Yılın 100 Kitabı (Le Monde)" id="JzY-YY-3Te"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNx-u1-9AR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-139" y="-696"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BSC-Hc-GWI">
+            <objects>
+                <navigationController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="eMO-Ms-vYQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bcS-UU-QzD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iaa-G3-E2W">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="z8C-aH-ziH" kind="relationship" relationship="rootViewController" id="hFN-bG-3JB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1rq-Ze-Gcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1110" y="-696"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
@@ -262,6 +298,7 @@
                     <navigationItem key="navigationItem" id="H7A-vg-sWr"/>
                     <connections>
                         <segue destination="gJJ-fc-OZD" kind="show" identifier="showEquipment" id="J0f-8I-wga"/>
+                        <segue destination="eMO-Ms-vYQ" kind="show" identifier="showBook" id="Q54-gx-UMj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
@@ -410,7 +447,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paG-ha-fBb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1788" y="75"/>
+            <point key="canvasLocation" x="1786" y="74"/>
         </scene>
     </scenes>
     <resources>

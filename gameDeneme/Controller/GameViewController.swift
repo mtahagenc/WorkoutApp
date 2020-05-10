@@ -23,9 +23,9 @@ class GameViewController: UIViewController,BodyPartProtocol{
     var nameToSend: String? {
         didSet{
             if nameToSend == "Brain" {
-                print("Brain")
-            } else if nameToSend == nil {
-                print("nil")
+                performSegue(withIdentifier: "showBook", sender: self)
+            } else if nameToSend == "Mac" {
+                print("Mac")
             } else {
                 performSegue(withIdentifier: "showEquipment", sender: self)
             }

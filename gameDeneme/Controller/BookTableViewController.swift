@@ -74,7 +74,7 @@ class BookTableViewController: UITableViewController{
             DispatchQueue.main.async {
                 self.books = models
                 self.tableView.reloadData()
-                print(self.books?.count)
+                print(self.books?.count ?? 1)
             }
         }
     }

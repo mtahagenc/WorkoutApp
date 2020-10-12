@@ -75,7 +75,7 @@ class GameViewController: UIViewController,BodyPartProtocol{
         scene.rootNode.addChildNode(cameraNode)
             
         // place the camera
-        cameraNode.position = SCNVector3(x: 0, y: 0, z: 25)
+        cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
 
         // create and add a light to the scene
         let firstLightNode = SCNNode()
@@ -113,8 +113,29 @@ class GameViewController: UIViewController,BodyPartProtocol{
         button.frame.origin.y = 20
         scnView.addSubview(button)
         
+        // add an explanation label to the scene
+        let expLabel = UILabel()
+        expLabel.text = "Lütfen geliştirmek istediğiniz kas grubunu seçiniz"
+        expLabel.font = UIFont.boldSystemFont(ofSize: 16.0)
+        expLabel.textColor = .black
+        expLabel.textAlignment = .center
+        expLabel.lineBreakMode = .byWordWrapping
+        expLabel.numberOfLines = 0
+        let width =  Int(self.view.frame.width - 150)
+        let height = 75
+        expLabel.frame = .init(x: 75, y: (Int(self.view.frame.height)-height), width: width, height: height)
+        expLabel.sizeToFit()
+        scnView.addSubview(expLabel)
+        
+        
+        
+        
+        
         // allows the user to manipulate the camera
         scnView.allowsCameraControl = true
+        
+        // restrict camera control on y axis
+        scnView.defaultCameraController.maximumVerticalAngle = 0.001
         
         // show statistics such as fps and timing information
         scnView.showsStatistics = false

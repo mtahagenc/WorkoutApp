@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IDf-fe-k4B">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yxw-9G-6xJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -27,7 +27,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K09-Be-Zo0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-139" y="75"/>
+            <point key="canvasLocation" x="771.01449275362324" y="75"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="9nf-LM-08J">
@@ -38,34 +38,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kUU-yl-bhx">
-                                <rect key="frame" x="0.0" y="44" width="414" height="797"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="753"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="oXn-lX-CBO">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="396.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="374.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovR-hV-zZn">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="wcT-LQ-xOc">
-                                                <rect key="frame" x="0.0" y="132" width="414" height="264.5"/>
+                                                <rect key="frame" x="0.0" y="125" width="414" height="249.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmD-sV-X4d">
-                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="264.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="249.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="hl6-rn-ukx">
-                                                        <rect key="frame" x="103.5" y="0.0" width="207" height="264.5"/>
+                                                        <rect key="frame" x="103.5" y="0.0" width="207" height="249.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZnS-6t-kHf">
-                                                                <rect key="frame" x="0.0" y="0.0" width="207" height="132.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="207" height="125"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="IwL-kY-1Fo">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="103"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="97"/>
                                                                         <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Guide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArM-xg-6N7">
-                                                                        <rect key="frame" x="0.0" y="103" width="207" height="29.5"/>
+                                                                        <rect key="frame" x="0.0" y="97" width="207" height="28"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -80,7 +80,7 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xad-Pl-Y8p">
-                                                                <rect key="frame" x="0.0" y="132.5" width="207" height="132"/>
+                                                                <rect key="frame" x="0.0" y="125" width="207" height="124.5"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                             </view>
                                                         </subviews>
@@ -93,7 +93,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGO-jr-9xV">
-                                                        <rect key="frame" x="310.5" y="0.0" width="103.5" height="264.5"/>
+                                                        <rect key="frame" x="310.5" y="0.0" width="103.5" height="249.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     </view>
                                                 </subviews>
@@ -116,25 +116,25 @@
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOG-Vv-UJq">
-                                        <rect key="frame" x="30" y="396.5" width="354" height="4"/>
+                                        <rect key="frame" x="30" y="374.5" width="354" height="4"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9MQ-p2-ObS">
-                                        <rect key="frame" x="0.0" y="400.5" width="414" height="396.5"/>
+                                        <rect key="frame" x="0.0" y="378.5" width="414" height="374.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIo-ae-y6d">
-                                                <rect key="frame" x="0.0" y="133.5" width="103.5" height="129"/>
+                                                <rect key="frame" x="0.0" y="122.5" width="103.5" height="129"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aZe-rA-CH9">
-                                                <rect key="frame" x="103.5" y="0.5" width="207" height="395.5"/>
+                                                <rect key="frame" x="103.5" y="0.0" width="207" height="374.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lr-J0-iXV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="168.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="159.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97k-2t-NT8">
-                                                        <rect key="frame" x="0.0" y="168.5" width="207" height="58.5"/>
+                                                        <rect key="frame" x="0.0" y="159.5" width="207" height="55.5"/>
                                                         <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                                         <state key="normal" title="Başla">
@@ -145,7 +145,7 @@
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Sb-mc-ruY">
-                                                        <rect key="frame" x="0.0" y="227" width="207" height="168.5"/>
+                                                        <rect key="frame" x="0.0" y="215" width="207" height="159.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     </view>
                                                 </subviews>
@@ -161,7 +161,7 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMP-BY-ABs">
-                                                <rect key="frame" x="310.5" y="133.5" width="103.5" height="129"/>
+                                                <rect key="frame" x="310.5" y="122.5" width="103.5" height="129"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
                                         </subviews>
@@ -205,6 +205,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tx6-BW-BGQ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IP6-jx-Uaj"/>
                     <connections>
                         <outlet property="dividerView" destination="AOG-Vv-UJq" id="QpH-na-2cB"/>
                         <outlet property="startBtnOutlet" destination="97k-2t-NT8" id="FZ5-xT-7b1"/>
@@ -214,18 +215,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fcw-P3-Tar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2104.3478260869565" y="73.660714285714278"/>
+            <point key="canvasLocation" x="-1194.2028985507247" y="73.660714285714278"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="s6T-1h-39y">
             <objects>
                 <viewController id="WGf-2U-egN" customClass="AboutViewController" customModule="Workout_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WMt-Y9-ikx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Workout Guide v1.0" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3r-ar-l1w">
-                                <rect key="frame" x="10" y="10" width="394" height="778"/>
+                                <rect key="frame" x="10" y="98" width="394" height="744"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -250,12 +251,12 @@
             </objects>
             <point key="canvasLocation" x="-2104" y="850"/>
         </scene>
-        <!--Yüz Yılın 100 Kitabı (Le Monde)-->
+        <!--Le Monde'un Kitap Listesi-->
         <scene sceneID="GTr-fg-Lql">
             <objects>
                 <tableViewController modalPresentationStyle="fullScreen" id="z8C-aH-ziH" customClass="BookTableViewController" customModule="Workout_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1ne-h8-eLU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <connections>
@@ -263,7 +264,14 @@
                             <outlet property="delegate" destination="z8C-aH-ziH" id="Mmm-s4-Iaf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Yüz Yılın 100 Kitabı (Le Monde)" id="JzY-YY-3Te"/>
+                    <navigationItem key="navigationItem" title="Le Monde'un Kitap Listesi" largeTitleDisplayMode="always" id="JzY-YY-3Te">
+                        <barButtonItem key="leftBarButtonItem" title="Geri" id="mOg-0D-6XH">
+                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="backToGameBtn:" destination="z8C-aH-ziH" id="ZHW-75-Uyj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNx-u1-9AR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,7 +303,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </sceneKitView>
-                    <navigationItem key="navigationItem" id="H7A-vg-sWr"/>
                     <connections>
                         <segue destination="gJJ-fc-OZD" kind="show" identifier="showEquipment" id="J0f-8I-wga"/>
                         <segue destination="eMO-Ms-vYQ" kind="show" identifier="showBook" id="Q54-gx-UMj"/>
@@ -303,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1110" y="75"/>
+            <point key="canvasLocation" x="-200.00000000000003" y="75"/>
         </scene>
         <!--Exercises Table View Controller-->
         <scene sceneID="TDM-zn-1L3">
@@ -325,7 +332,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0R-DR-atP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="75"/>
+            <point key="canvasLocation" x="1734.7826086956522" y="75"/>
         </scene>
         <!--Exercise Detail View Controller-->
         <scene sceneID="ghr-F3-2Nx">
@@ -336,29 +343,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYm-0o-RCN">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="R9x-1z-khh"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Title" id="g8j-zX-alI"/>
+                                    <navigationItem title="Title" id="g8j-zX-alI">
+                                        <barButtonItem key="leftBarButtonItem" title="Geri" id="Rgv-p3-4OT">
+                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <connections>
+                                                <action selector="backToExercisesBtn:" destination="NLT-W9-VTW" id="q3a-tx-ugo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="frU-JX-OWh">
-                                <rect key="frame" x="10" y="98" width="394" height="754"/>
+                                <rect key="frame" x="10" y="142" width="394" height="710"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGf-h3-ORS" customClass="WKYTPlayerView">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="238"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="223"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dikkat Edilmesi Gerekenler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7g-Qb-kJX">
-                                        <rect key="frame" x="0.0" y="248" width="394" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="233" width="394" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qdl-h7-EHj">
-                                        <rect key="frame" x="0.0" y="278.5" width="394" height="475.5"/>
+                                        <rect key="frame" x="0.0" y="263.5" width="394" height="446.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <prototypes>
@@ -447,7 +461,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paG-ha-fBb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1786" y="74"/>
+            <point key="canvasLocation" x="2695.6521739130435" y="73.660714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sHG-LD-qpj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yxw-9G-6xJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zka-bx-g3d">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IDf-fe-k4B" kind="relationship" relationship="rootViewController" id="ek8-vz-MTb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yft-rO-N82" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2104.3478260869565" y="73.660714285714278"/>
         </scene>
     </scenes>
     <resources>

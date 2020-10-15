@@ -23,6 +23,9 @@ class ExerciseDetailViewController: UIViewController, UITableViewDelegate, UITab
     
     @IBOutlet weak var videoView: WKYTPlayerView!
         
+    @IBAction func backToExercisesBtn(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         videoView.load(withVideoId: delegate!.getExercise().id)

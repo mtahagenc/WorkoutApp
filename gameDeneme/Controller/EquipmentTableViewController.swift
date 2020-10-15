@@ -27,6 +27,7 @@ class EquipmentTableViewController: UITableViewController,EquipmentProtocol {
     private var exercises: [Exercise]? {
         didSet{
             performSegue(withIdentifier: "showExercises", sender: self)
+            self.view.isUserInteractionEnabled = true
         }
     }
     let db = Firestore.firestore()
@@ -40,6 +41,11 @@ class EquipmentTableViewController: UITableViewController,EquipmentProtocol {
         addSwipe()
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
+    
+    @IBAction func backToGameBtn(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 
     // MARK: - Table view data source
     
@@ -87,6 +93,7 @@ class EquipmentTableViewController: UITableViewController,EquipmentProtocol {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        self.view.isUserInteractionEnabled = false
         getData(exerciseName: "\(delegate!.getBodyPart())-\(equipmentArrayForDatabase[indexPath.row])")
     }
     

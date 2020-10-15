@@ -20,9 +20,12 @@ class BookTableViewController: UITableViewController{
         registerTableViewCells()
         getData()
         addSwipe()
-        
     }
-
+    
+    @IBAction func backToGameBtn(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return books?.count ?? 0

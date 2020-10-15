@@ -127,6 +127,14 @@ class GameViewController: UIViewController,BodyPartProtocol{
         expLabel.sizeToFit()
         scnView.addSubview(expLabel)
         
+        // add rotate image
+        let rotateImgView = UIImageView()
+        rotateImgView.image = UIImage(named: "rotate")
+        rotateImgView.frame = .init(x: (self.view.frame.width - 75)/2 , y: 50, width: 75, height: 50)
+        scnView.addSubview(rotateImgView)
+        
+        
+        
         
         
         

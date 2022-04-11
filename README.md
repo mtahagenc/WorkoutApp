@@ -28,5 +28,5 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 
 ## Demo
 
-![App Demo](https://i.imgur.com/Ok2p6b1.mp4)
-![App Demo](https://imgur.com/4F3dHLG.mp4)
+https://user-images.githubusercontent.com/28298966/162698801-9f29b1c4-016d-4477-bb6c-dfa97f672a70.mp4
+

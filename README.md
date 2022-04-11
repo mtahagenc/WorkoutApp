@@ -15,5 +15,18 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://imgur.com/af8N9ax.png)
 
+![App Screenshot](https://i.imgur.com/YCFwMLt.png)
+
+![App Screenshot](https://imgur.com/zIqz2HN.png)
+
+![App Screenshot](https://imgur.com/SzTSXVT.png)
+
+![App Screenshot](https://imgur.com/7eyAkoY.png)
+
+
+## Demo
+
+![App Demo](https://i.imgur.com/Ok2p6b1.mp4)
+![App Demo](https://imgur.com/4F3dHLG.mp4)
